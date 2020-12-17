@@ -117,7 +117,7 @@ footer {
 }
 
 .intericon {
-    font-size: 44px;
+    height: 44px;
     background-color: #E2EFFF;
     color: #000000;
 }
@@ -152,7 +152,7 @@ footer {
 }
 
 .interactive p:hover > .intericon {
-    font-size: 32px;
+    height: 32px;
 }
 
 .interactive p:hover > .hide {
@@ -165,7 +165,6 @@ footer {
     grid-area: 3 / 1 / 6 / 5;
     padding: 10px;
     height: 220px;
-    flex-basis: 190%;
     border-radius: 20px;
     font-size: 19px;
     overflow: auto;
@@ -179,7 +178,7 @@ footer {
     margin: -5px;
 }
 
-.about-me img {
+.portrait {
     align-self: center;
     width: 24%;
     height: 76%;
@@ -200,7 +199,7 @@ footer {
     }
     
     .intericon {
-        font-size: 32px;
+        height: 32px;
     }
 
     .hide {
@@ -211,9 +210,8 @@ footer {
     #textbox {
         margin-top: 15px;
         font-size: 1em;
-        height: 240px;
+        height: auto;
         width: 400px;
-        overflow: hidden;
     }
 
     #textbox p {
@@ -222,7 +220,7 @@ footer {
         line-height: 1.2;
     }
 
-    .about-me img {
+    .portrait {
         display: none;
     }
 }
@@ -243,8 +241,8 @@ footer {
     margin: 1% auto;
 }
 
-.skillicons i {
-    font-size: 50px;
+.skillicons img {
+    height: 50px;
 }
 
 #skills .boxes img {
@@ -324,12 +322,12 @@ figcaption a:hover {
     font-size: 20px;
 }
 
-#contact i {
-    font-size: 40px;
+#contact img {
+    height: 40px;
     background-color: #a9d8e6;
     color: #000000;
     position: relative;
-    top: 2px;
+    top: 6px;
     left: 3px;
     margin-right: 2px;
 }
@@ -340,6 +338,10 @@ figcaption a:hover {
     justify-content: space-around;
     margin: auto;
     font-size: 18px;
+}
+
+.contacticons a:hover {
+    color: #2C5866;
 }
 
 @media only screen and (max-width: 768px) {
