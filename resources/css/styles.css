@@ -231,6 +231,31 @@ footer {
     padding-left: 4%;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.button {
+    display: inline-flex;
+    padding: 10px;
+    margin: 5px;
+    background-color: #E99A70;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.button:hover > a {
+    font-size: 18px;
+}
+
+.button a {
+    color: #000000;
+    background-color: #E99A70;
+    text-decoration: none;
+}
+
 .skillicons,
 .boxes {
     display: flex;
@@ -249,29 +274,17 @@ footer {
     height: 340px;
 }
 
-#webdev img:hover {
-    box-shadow: -10px -10px 5px #4A6066;
-}
-
-#php img:hover {
-    box-shadow: 10px -10px 5px #4A6066;
-}
-
-figcaption {
-    text-align: center;
-    font-style: italic;
-}
-
-#contact a:hover,
-figcaption a:hover {
-    color: #2C5866;
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {    
     .boxes {
         width: 94%;
         flex-flow: column wrap;
         overflow: auto;
+    }
+
+    .multipleButtons {
+        display: inline;
+        width: inherit;
+        text-align: center;
     }
 
     .boxes img {
@@ -320,12 +333,12 @@ figcaption a:hover {
     background-color: #a9d8e6;
     color: #000000;
     font-size: 20px;
+    text-decoration: none;
 }
 
 #contact img {
     height: 40px;
     background-color: #a9d8e6;
-    color: #000000;
     position: relative;
     top: 6px;
     left: 3px;
@@ -340,7 +353,7 @@ figcaption a:hover {
     font-size: 18px;
 }
 
-.contacticons a:hover {
+.contacticons a:hover > * {
     color: #2C5866;
 }
 
