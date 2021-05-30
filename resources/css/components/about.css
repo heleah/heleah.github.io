@@ -17,12 +17,12 @@
   color: #000000;
   display: flex;
   align-items: center;
-  padding: 14px;
+  padding: 1rem;
   border-radius: 50%;
 }
 
 .intericon {
-  height: 44px;
+  height: 2.75rem;
   background-color: var(--primary-100);
   color: #000000;
 }
@@ -44,7 +44,7 @@
 }
 
 .hide {
-  font-size: 0px;
+  font-size: 0rem;
   background-color: var(--primary-100);
   color: #000000;
   font-weight: 600;
@@ -57,30 +57,31 @@
 }
 
 .interactive p:hover > .intericon {
-  height: 32px;
+  height: 2rem;
 }
 
 .interactive p:hover > .hide {
   display: inline;
-  font-size: 18px;
-  margin-left: 4px;
+  font-size: 1.125rem;
+  margin-left: 0.25rem;
 }
 
 #textbox {
   grid-area: 3 / 1 / 6 / 5;
-  padding: 10px;
-  height: 220px;
+  padding: 0.625rem;
+  height: 14rem;
   border-radius: 20px;
-  font-size: 19px;
+  font-size: 1.188rem;
   overflow: auto;
+  background-color: var(--primary-500);
+  color: white;
 }
 
 #textbox p {
   display: inline-block;
   background-color: var(--primary-500);
   color: #ffffff;
-  line-height: 1.5;
-  margin: -5px;
+  margin: -0.3rem;
 }
 
 .portrait {
@@ -104,24 +105,24 @@
   }
 
   .intericon {
-    height: 32px;
+    height: 2rem;
   }
 
   .hide {
-    font-size: 18px;
-    margin-left: 4px;
+    font-size: 1.125rem;
+    margin-left: 0.25rem;
   }
 
   #textbox {
-    margin-top: 15px;
-    font-size: 1em;
+    margin-top: 1rem;
+    font-size: 1rem;
     height: auto;
-    width: 400px;
+    width: 25rem;
   }
 
   #textbox p {
-    margin: -10px;
-    padding: 8px;
+    margin: -0.625rem;
+    padding: 0.5rem;
     line-height: 1.2;
   }
 

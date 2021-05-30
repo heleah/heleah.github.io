@@ -1,21 +1,20 @@
 #contact {
-  padding-bottom: 50px;
+  padding-bottom: 3rem;
 }
 
 #contact a {
   background-color: var(--primary);
   color: #000000;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: none;
 }
 
 #contact img {
-  height: 40px;
+  height: 2.5rem;
   background-color: var(--primary);
   position: relative;
-  top: 6px;
-  left: 3px;
-  margin-right: 2px;
+  top: 0.4rem;
+  margin-right: 0.1rem;
 }
 
 .contacticons {
@@ -23,7 +22,7 @@
   width: 90%;
   justify-content: space-around;
   margin: auto;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .contacticons a:hover > * {
@@ -32,6 +31,6 @@
 
 @media only screen and (max-width: 768px) {
   #contact i {
-    font-size: 46px;
+    font-size: 2.9rem;
   }
 }

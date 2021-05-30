@@ -10,15 +10,15 @@
 
 .button {
   display: inline-flex;
-  padding: 10px;
-  margin: 5px;
+  padding: 0.625rem;
+  margin: 0.3rem;
   background-color: var(--secondary);
   border-radius: 10px;
   border: 1px solid #000000;
 }
 
 .button:hover > a {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .button a {
@@ -38,11 +38,11 @@
 }
 
 .skillicons img {
-  height: 50px;
+  height: 3rem;
 }
 
 #skills .boxes img {
-  height: 340px;
+  height: 21rem;
 }
 
 @media only screen and (max-width: 900px) {

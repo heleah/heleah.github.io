@@ -1,16 +1,16 @@
 .logo {
-  margin-left: 15px;
-  font-size: 20px;
+  margin-left: 1rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
 .visual {
   font-family: 'Cutive Mono', monospace;
-  font-size: 26px;
+  font-size: 1.625rem;
   border: 2px black dashed;
   border-radius: 10px;
-  padding: 6px;
-  margin-right: 10px;
+  padding: 0.375rem;
+  margin-right: 0.625rem;
 }
 
 .fullname {
@@ -24,7 +24,7 @@ nav {
 
 nav li {
   display: inline-flex;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 nav li a {
