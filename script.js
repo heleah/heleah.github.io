@@ -1,18 +1,6 @@
-document.getElementById('education').onclick = function () {
-  getInfo('education');
-};
+// About Me
 
-document.getElementById('work').onclick = function () {
-  getInfo('work');
-};
-
-document.getElementById('motivation').onclick = function () {
-  getInfo('motivation');
-};
-
-document.getElementById('interests').onclick = function () {
-  getInfo('interests');
-};
+const aboutMeTextbox = document.getElementById('textbox');
 
 function getInfo(id) {
   let text = '';
@@ -40,5 +28,216 @@ function getInfo(id) {
     default:
       text = null;
   }
-  document.getElementById('textbox').innerHTML = `<p>${text}</p>`;
+  aboutMeTextbox.innerHTML = `<p>${text}</p>`;
 }
+
+document.getElementById('education').onclick = function () {
+  getInfo('education');
+};
+
+document.getElementById('work').onclick = function () {
+  getInfo('work');
+};
+
+document.getElementById('motivation').onclick = function () {
+  getInfo('motivation');
+};
+
+document.getElementById('interests').onclick = function () {
+  getInfo('interests');
+};
+
+// Certificate
+
+const certificateContainer = document.getElementById('certificate-container');
+
+const certificates = [
+  {
+    name: 'Web Development at Codecademy',
+    id: 'webdev',
+    contents: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'Shell',
+      'Git Workflow und GitHub',
+      'Frontend-Anwendungen mit React & JSX',
+      'Backend-Entwicklung mit Node.js',
+      'SQL & Datenbanken',
+      'APIs',
+      'Test Driven Development mit Mocha & Node.js',
+    ],
+    certSrc:
+      'https://www.codecademy.com/profiles/datschx/certificates/5b32457b646caa5007c30975',
+    certImgSrc: './resources/img/WebDevCert.jpg',
+    certAlt: 'Web Development Certificate',
+  },
+  {
+    name: 'PHP at Codecademy',
+    id: 'php',
+    contents: [
+      'Funktionen (inkl. eingebaute)',
+      'Arrays',
+      'HTML Form Handling',
+      'Bedingungen und logische Operatoren',
+      'Schleifen',
+      'Datenvalidierung',
+      'Klassen und Objekte',
+    ],
+    certSrc:
+      'https://www.codecademy.com/profiles/datschx/certificates/d24ce3aa4ed99ac04afffec4a78e2e44',
+    certImgSrc: './resources/img/TSCert.jpg',
+    certAlt: 'PHP Certificate',
+  },
+  {
+    name: 'TypeScript at Codecademy',
+    id: 'typescript',
+    contents: [
+      'Types',
+      'Funktionen',
+      'Komplexe Typen (Arrays, Custom Types',
+      'Union Types',
+      'Type Narrowing',
+      'Advanced Object Types (Interfaces)',
+    ],
+    certSrc:
+      'https://www.codecademy.com/profiles/datschx/certificates/56fb1e71303e37b643bb1905f31c8a09',
+    certImgSrc: './resources/img/TSCert.jpg',
+    certAlt: 'TypeScript Certificate',
+  },
+];
+
+function createCertificates() {
+  certificates.forEach((certificate) => {
+    const newCert = document.createElement('article');
+    newCert.classList.add('boxes');
+    newCert.id = certificate.id;
+    certificateContainer.appendChild(newCert);
+
+    const contentsSect = document.createElement('section');
+    contentsSect.classList.add('contents');
+    newCert.appendChild(contentsSect);
+
+    const h3 = document.createElement('h3');
+    h3.innerText = certificate.name;
+    contentsSect.appendChild(h3);
+
+    const ul = document.createElement('ul');
+    contentsSect.appendChild(ul);
+
+    certificate.contents.forEach((content) => {
+      const li = document.createElement('li');
+      li.innerText = content;
+      ul.appendChild(li);
+    });
+
+    const buttonContainer = document.createElement('section');
+    buttonContainer.classList.add('buttons');
+    contentsSect.appendChild(buttonContainer);
+
+    const buttonP = document.createElement('p');
+    buttonP.classList.add('button');
+    buttonContainer.appendChild(buttonP);
+
+    const aTag = document.createElement('a');
+    aTag.href = certificate.certSrc;
+    aTag.target = '_blank';
+    aTag.innerText = 'Zur Verifizierung';
+    buttonP.appendChild(aTag);
+
+    const certImg = document.createElement('img');
+    certImg.src = certificate.certImgSrc;
+    certImg.alt = certificate.certAlt;
+    newCert.appendChild(certImg);
+  });
+}
+
+createCertificates();
+
+/*<div class="boxes" id="webdev">
+          <figure>
+            <img
+              src="resources/img/WebDevCert.jpg"
+              alt="Web Development Certificate"
+            />
+          </figure>
+          <div class="contents">
+            <h3>Web Development at Codecademy</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Kommandozeile</li>
+              <li>Git und GitHub</li>
+              <li>Front-End-Anwendungen mit React & JSX</li>
+              <li>Back-End-Entwicklung mit Node.js</li>
+              <li>SQL & Datenbanken</li>
+              <li>APIs</li>
+              <li>Test Driven Development (Mocha & Node.js)</li>
+            </ul>
+            <div class="buttons">
+              <p class="button">
+                <a
+                  href="https://www.codecademy.com/profiles/datschx/certificates/5b32457b646caa5007c30975"
+                  target="_blank"
+                  >Zur Verifizierung</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="boxes" id="php">
+          <div class="contents">
+            <h3>PHP at Codecademy</h3>
+            <ul>
+              <li>Funktionen (inkl. eingebaute)</li>
+              <li>Arrays</li>
+              <li>HTML Form Handling</li>
+              <li>Bedingungen und logische Operatoren</li>
+              <li>Schleifen</li>
+              <li>Datenvalidierung</li>
+              <li>Klassen und Objekte</li>
+            </ul>
+            <div class="buttons">
+              <p class="button">
+                <a
+                  href="https://www.codecademy.com/profiles/datschx/certificates/d24ce3aa4ed99ac04afffec4a78e2e44"
+                  target="_blank"
+                  >Zur Verifizierung</a
+                >
+              </p>
+            </div>
+          </div>
+          <figure>
+            <img src="resources/img/PHPCert.jpg" alt="PHP Certificate" />
+          </figure>
+        </div>
+
+
+        <div class="boxes" id="typescript">
+          <figure>
+            <img src="resources/img/TSCert.jpg" alt="TypeScript Certificate" />
+          </figure>
+          <div class="contents">
+            <h3>TypeScript at Codecademy</h3>
+            <ul>
+              <li>Types</li>
+              <li>Funktionen</li>
+              <li>Komplexe Typen (Arrays, Custom Types)</li>
+              <li>Union Types</li>
+              <li>Type Narrowing</li>
+              <li>Advanced Object Types (Interfaces)</li>
+            </ul>
+            <div class="buttons">
+              <p class="button">
+                <a
+                  href="https://www.codecademy.com/profiles/datschx/certificates/56fb1e71303e37b643bb1905f31c8a09"
+                  target="_blank"
+                  >Zur Verifizierung</a
+                >
+              </p>
+            </div>
+          </div>
+        </div> */
