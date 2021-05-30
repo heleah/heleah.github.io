@@ -1,199 +1,337 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <title>Helenas Portfolio</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resources/css/fontawesome/css/all.css" />
+    <link rel="icon" type="image/png" href="resources/icon.png" />
+  </head>
 
-    <head>
-        <title>Helenas Portfolio</title>
-        <link rel="stylesheet" href="resources/css/styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="resources/css/fontawesome/css/all.css">
-        <link rel="icon" type="image/png" href="resources/icon.png"/>
-    </head>
+  <body>
+    <header>
+      <p class="logo">
+        <span class="visual">HH</span
+        ><span class="fullname mobilehide">Helena Heil</span>
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#about">Über mich</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li>
+            <a href="#skills"
+              >Kenntnisse<span class="mobilehide"> & Zertifikate</span></a
+            >
+          </li>
+          <li><a href="#contact">Kontakt</a></li>
+          <!-- <li class="english"><a href="english.html">English</a></li> -->
+        </ul>
+      </nav>
+    </header>
 
-    <body>
-        <header>
-            <p class="logo"><span class="visual">HH</span><span class="fullname mobilehide">Helena Heil</span></p>
-            <nav>
-                <ul>
-                    <li><a href="#about">Über mich</a></li>
-                    <li><a href="#projects">Projekte</a></li>
-                    <li><a href="#skills">Kenntnisse<span class="mobilehide"> & Zertifikate</span></a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                    <!-- <li class="english"><a href="english.html">English</a></li> -->
-                </ul>
-            </nav>
-        </header>
+    <main class="main">
+      <section id="about">
+        <h2>Über mich</h2>
+        <div class="about-me">
+          <div class="interactive">
+            <p id="education">
+              <img
+                class="intericon"
+                src="resources/img/fontawesome/svgs/graduation-cap.svg"
+                alt="Bildung"
+              /><span class="hide">Bildung</span>
+            </p>
+            <p id="work">
+              <img
+                class="intericon"
+                src="resources/img/fontawesome/svgs/briefcase.svg"
+                alt="Berufserfahrung"
+              /><span class="hide">Berufserfahrung</span>
+            </p>
+            <p id="motivation">
+              <img
+                class="intericon"
+                src="resources/img/fontawesome/svgs/rocket.svg"
+                alt="Motivation"
+              /><span class="hide">Motivation</span>
+            </p>
+            <p id="interests">
+              <img
+                class="intericon"
+                src="resources/img/fontawesome/svgs/guitar.svg"
+                alt="Interessen"
+              /><span class="hide">Interessen</span>
+            </p>
+            <div id="textbox">
+              ▲ Informationen über mich finden Sie über die obigen Symbole
+              heraus. ▲
+            </div>
+          </div>
+          <img src="resources/img/HelenaHeil.jpg" class="portrait" />
+        </div>
+      </section>
 
-        <main class="main lightblueback">
-            
-            <section class="lightblueback" id="about">
-                <h2>Über mich</h2>
-                <div class="about-me lightblueback">
-                    <div class="interactive">
-                        <p id="education"><img class="intericon" src="resources/img/fontawesome/svgs/graduation-cap.svg" alt="Bildung"><span class="hide">Bildung</span></p>
-                        <p id="work"><img class="intericon" src="resources/img/fontawesome/svgs/briefcase.svg" alt="Berufserfahrung"><span class="hide">Berufserfahrung</span></p>
-                        <p id="motivation"><img class="intericon" src="resources/img/fontawesome/svgs/rocket.svg" alt="Motivation"><span class="hide">Motivation</span></p>
-                        <p id="interests"><img class="intericon" src="resources/img/fontawesome/svgs/guitar.svg" alt="Interessen"><span class="hide">Interessen</span></p>
-                        <div id="textbox">▲ Informationen über mich finden Sie über die obigen Symbole heraus. ▲</div>
-                    </div>
-                    <img src="resources/img/HelenaHeil.jpg" class="portrait">
-                </div>
-            </section>
+      <section id="projects">
+        <h2>Projekte</h2>
+        <div class="boxes" id="socialcard">
+          <div class="contents">
+            <h3>Social Card</h3>
+            <p>Sprachen: JSX in ReactJS mit React Bootstrap</p>
+            <p>
+              Statischer UI React-Komponent. Das Design orientiert sich an
+              diversen Social Media-Plattformen.
+            </p>
+            <div class="buttons multipleButtons">
+              <ul>
+                <li class="button">
+                  <a href="http://observant-brain.surge.sh/" target="_blank"
+                    >Zur Vollansicht</a
+                  >
+                </li>
+                <li class="button">
+                  <a
+                    href="https://github.com/helenahcodes/social-card"
+                    target="_blank"
+                    >Zum Code</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <figure>
+            <img src="resources/img/socialcard.jpg" alt="Social Card Preview" />
+          </figure>
+        </div>
+        <div class="boxes" id="choredoor">
+          <figure>
+            <img src="resources/img/choredoor.jpg" alt="Chore Door Preview" />
+          </figure>
+          <div class="contents">
+            <h3>Chore Door</h3>
+            <p>Sprachen: JavaScript, HTML, CSS</p>
+            <p>
+              Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot
+              (rechts) zu begegnen, der andernfalls die Spielrunde sofort
+              beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den
+              Serienrekord der Sitzung an. <br />(HTML und CSS großteils von
+              Codecademy bereitgestellt)
+            </p>
+            <div class="buttons multipleButtons">
+              <ul>
+                <li class="button">
+                  <a
+                    href="https://helenahcodes.github.io/choredoor/"
+                    target="_blank"
+                    >Zum Spiel</a
+                  >
+                </li>
+                <li class="button">
+                  <a
+                    href="https://github.com/helenahcodes/choredoor"
+                    target="_blank"
+                    >Zum Code</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="boxes" id="worldpopulationsii">
+          <div class="contents">
+            <h3>World Populations II</h3>
+            <p>Sprache: SQL</p>
+            <p>
+              Anhand von Datensätzen verschiedener Länder aus den letzten Jahren
+              werden interessante Informationen herausgefiltert.
+            </p>
+            <div class="buttons">
+              <p class="button">
+                <a
+                  href="https://github.com/helenahcodes/world-populations-ii/blob/main/population_queries.sql"
+                  target="_blank"
+                  >Zum Code</a
+                >
+              </p>
+            </div>
+          </div>
+          <figure>
+            <img
+              src="resources/img/worldpopu.jpg"
+              alt="World Populations II Code Preview"
+            />
+          </figure>
+        </div>
+        <div class="boxes" id="mysteriousorganism">
+          <figure>
+            <img
+              src="resources/img/mystorg.jpg"
+              alt="Mysterious Organism Code Preview"
+            />
+          </figure>
+          <div class="contents">
+            <h3>Mysterious Organism</h3>
+            <p>Sprache: JavaScript</p>
+            <p>
+              In diesem Projekt von Codecademy wird mit einem fiktiven neuen
+              Wasser-Organismus experimentiert. Innerhalb einer Factory Funktion
+              werden mehrere Methoden definiert.
+            </p>
+            <div class="buttons">
+              <p class="button">
+                <a
+                  href="https://github.com/helenahcodes/mysterious-organism/blob/main/main.js"
+                  target="_blank"
+                  >Zum Code</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="boxes" id="tbc">
+          <p>
+            Dieser Abschnitt wird stetig mit weiteren Projekten aktualisiert.
+          </p>
+        </div>
+      </section>
 
-            <section class="lightblueback" id="projects">
-                <h2 class="lightblueback">Projekte</h2>
-                <div class="boxes lightblueback" id="socialcard">
-                    <div class="contents lightblueback">
-                        <h3>Social Card</h3>
-                        <p>Sprachen: JSX in ReactJS mit React Bootstrap</p>
-                        <p>Statischer UI React-Komponent. Das Design orientiert sich an diversen Social Media-Plattformen.</p>
-                        <div class="buttons multipleButtons">
-                            <ul class="lightblueback">
-                                <li class="button"><a href="http://observant-brain.surge.sh/" target="_blank">Zur Vollansicht</a></li>
-                                <li class="button"><a href="https://github.com/helenahcodes/social-card" target="_blank">Zum Code</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <figure>
-                        <img src="resources/img/socialcard.jpg" alt="Social Card Preview">
-                    </figure>
-                </div>
-                <div class="boxes lightblueback" id="choredoor">
-                    <figure>
-                        <img src="resources/img/choredoor.jpg" alt="Chore Door Preview">
-                    </figure>
-                    <div class="contents lightblueback">
-                        <h3>Chore Door</h3>
-                        <p>Sprachen: JavaScript, HTML, CSS</p>
-                        <p>Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot (rechts) zu begegnen, der andernfalls die Spielrunde sofort beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den Serienrekord der Sitzung an. <br>(HTML und CSS großteils von Codecademy bereitgestellt)</p>
-                        <div class="buttons multipleButtons">
-                            <ul class="lightblueback">
-                                <li class="button"><a href="https://helenahcodes.github.io/choredoor/" target="_blank">Zum Spiel</a></li>
-                                <li class="button"><a href="https://github.com/helenahcodes/choredoor" target="_blank">Zum Code</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="boxes lightblueback" id="worldpopulationsii">
-                    <div class="contents lightblueback">
-                        <h3>World Populations II</h3>
-                        <p>Sprache: SQL</p>
-                        <p>Anhand von Datensätzen verschiedener Länder aus den letzten Jahren werden interessante Informationen herausgefiltert.</p>
-                        <div class="buttons">
-                            <p class="button"><a href="https://github.com/helenahcodes/world-populations-ii/blob/main/population_queries.sql" target="_blank">Zum Code</a></p>
-                        </div>
-                    </div>
-                    <figure>
-                        <img src="resources/img/worldpopu.jpg" alt="World Populations II Code Preview">
-                    </figure>                    
-                </div>
-                <div class="boxes lightblueback" id="mysteriousorganism">
-                    <figure>
-                        <img src="resources/img/mystorg.jpg" alt="Mysterious Organism Code Preview">
-                    </figure>
-                    <div class="contents lightblueback">
-                        <h3>Mysterious Organism</h3>
-                        <p>Sprache: JavaScript</p>
-                        <p>In diesem Projekt von Codecademy wird mit einem fiktiven neuen Wasser-Organismus experimentiert. Innerhalb einer Factory Funktion werden mehrere Methoden definiert.</p>
-                        <div class="buttons">
-                            <p class="button"><a href="https://github.com/helenahcodes/mysterious-organism/blob/main/main.js" target="_blank">Zum Code</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="boxes lightblueback" id="tbc">
-                    <p>Dieser Abschnitt wird stetig mit weiteren Projekten aktualisiert.</p>
-                </div>
-            </section>
+      <section id="skills">
+        <h2>Kenntnisse & Zertifikate</h2>
+        <div class="skillicons">
+          <img src="resources/img/fontawesome/svgs/html5.svg" title="HTML" />
+          <img src="resources/img/fontawesome/svgs/css3-alt.svg" title="CSS" />
+          <img src="resources/img/fontawesome/svgs/js.svg" title="JavaScript" />
+          <img src="resources/img/fontawesome/svgs/git-alt.svg" title="Git" />
+          <img src="resources/img/fontawesome/svgs/react.svg" title="React" />
+          <img src="resources/img/fontawesome/svgs/php.svg" title="PHP" />
+        </div>
+        <div class="boxes" id="webdev">
+          <figure>
+            <img
+              src="resources/img/WebDevCert.jpg"
+              alt="Web Development Certificate"
+            />
+          </figure>
+          <div class="contents">
+            <h3>Web Development at Codecademy</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Kommandozeile</li>
+              <li>Git und GitHub</li>
+              <li>Front-End-Anwendungen mit React & JSX</li>
+              <li>Back-End-Entwicklung mit Node.js</li>
+              <li>SQL & Datenbanken</li>
+              <li>APIs</li>
+              <li>Test Driven Development (Mocha & Node.js)</li>
+            </ul>
+            <div class="buttons">
+              <p class="button">
+                <a
+                  href="https://www.codecademy.com/profiles/datschx/certificates/5b32457b646caa5007c30975"
+                  target="_blank"
+                  >Zur Verifizierung</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="boxes" id="php">
+          <div class="contents">
+            <h3>PHP at Codecademy</h3>
+            <ul>
+              <li>Funktionen (inkl. eingebaute)</li>
+              <li>Arrays</li>
+              <li>HTML Form Handling</li>
+              <li>Bedingungen und logische Operatoren</li>
+              <li>Schleifen</li>
+              <li>Datenvalidierung</li>
+              <li>Klassen und Objekte</li>
+            </ul>
+            <div class="buttons">
+              <p class="button">
+                <a
+                  href="https://www.codecademy.com/profiles/datschx/certificates/d24ce3aa4ed99ac04afffec4a78e2e44"
+                  target="_blank"
+                  >Zur Verifizierung</a
+                >
+              </p>
+            </div>
+          </div>
+          <figure>
+            <img src="resources/img/PHPCert.jpg" alt="PHP Certificate" />
+          </figure>
+        </div>
+        <div class="boxes" id="typescript">
+          <figure>
+            <img src="resources/img/TSCert.jpg" alt="TypeScript Certificate" />
+          </figure>
+          <div class="contents">
+            <h3>TypeScript at Codecademy</h3>
+            <ul>
+              <li>Types</li>
+              <li>Funktionen</li>
+              <li>Komplexe Typen (Arrays, Custom Types)</li>
+              <li>Union Types</li>
+              <li>Type Narrowing</li>
+              <li>Advanced Object Types (Interfaces)</li>
+            </ul>
+            <div class="buttons">
+              <p class="button">
+                <a
+                  href="https://www.codecademy.com/profiles/datschx/certificates/56fb1e71303e37b643bb1905f31c8a09"
+                  target="_blank"
+                  >Zur Verifizierung</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="lightblueback" id="skills">
-                <h2>Kenntnisse & Zertifikate</h2>
-                <div class="skillicons lightblueback">
-                    <img src="resources/img/fontawesome/svgs/html5.svg" title="HTML">
-                    <img src="resources/img/fontawesome/svgs/css3-alt.svg" title="CSS">
-                    <img src="resources/img/fontawesome/svgs/js.svg" title="JavaScript">
-                    <img src="resources/img/fontawesome/svgs/git-alt.svg" title="Git">
-                    <img src="resources/img/fontawesome/svgs/react.svg" title="React">
-                    <img src="resources/img/fontawesome/svgs/php.svg" title="PHP">
-                </div>
-                <div class="boxes" id="webdev">
-                    <figure class="lightblueback">
-                        <img src="resources/img/WebDevCert.jpg" alt="Web Development Certificate">
-                    </figure>
-                    <div class="contents lightblueback">
-                        <h3>Web Development at Codecademy</h3>
-                        <ul class="lightblueback">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Kommandozeile</li>
-                            <li>Git und GitHub</li>
-                            <li>Front-End-Anwendungen mit React & JSX</li>
-                            <li>Back-End-Entwicklung mit Node.js</li>
-                            <li>SQL & Datenbanken</li>
-                            <li>APIs</li>
-                            <li>Test Driven Development (Mocha & Node.js)</li>
-                        </ul>
-                        <div class="buttons">
-                            <p class="button"><a href="https://www.codecademy.com/profiles/datschx/certificates/5b32457b646caa5007c30975" target="_blank">Zur Verifizierung</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="boxes" id="php">
-                    <div class="contents lightblueback">
-                        <h3>PHP at Codecademy</h3>
-                        <ul class="lightblueback">
-                            <li>Funktionen (inkl. eingebaute)</li>
-                            <li>Arrays</li>
-                            <li>HTML Form Handling</li>
-                            <li>Bedingungen und logische Operatoren</li>
-                            <li>Schleifen</li>
-                            <li>Datenvalidierung</li>
-                            <li>Klassen und Objekte</li>
-                        </ul>
-                        <div class="buttons">
-                            <p class="button"><a href="https://www.codecademy.com/profiles/datschx/certificates/d24ce3aa4ed99ac04afffec4a78e2e44" target="_blank">Zur Verifizierung</a></p>
-                        </div>
-                    </div>
-                    <figure class="lightblueback">
-                        <img src="resources/img/PHPCert.jpg" alt="PHP Certificate">
-                    </figure>
-                </div>
-                <div class="boxes" id="typescript">
-                    <figure class="lightblueback">
-                        <img src="resources/img/TSCert.jpg" alt="TypeScript Certificate">
-                    </figure>
-                    <div class="contents lightblueback">
-                        <h3>TypeScript at Codecademy</h3>
-                        <ul class="lightblueback">
-                            <li>Types</li>
-                            <li>Funktionen</li>
-                            <li>Komplexe Typen (Arrays, Custom Types)</li>
-                            <li>Union Types</li>
-                            <li>Type Narrowing</li>
-                            <li>Advanced Object Types (Interfaces)</li>
-                        </ul>
-                        <div class="buttons">
-                            <p class="button"><a href="https://www.codecademy.com/profiles/datschx/certificates/56fb1e71303e37b643bb1905f31c8a09" target="_blank">Zur Verifizierung</a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section id="contact">
+        <h2>Kontakt</h2>
+        <div class="contacticons">
+          <a href="mailto:helenahcodes@gmail.com"
+            ><img src="resources/img/fontawesome/svgs/envelope.svg" /><span
+              class="mobilehide"
+            >
+              helenahcodes@gmail.com</span
+            ></a
+          >
+          <a
+            href="https://github.com/helenahcodes?tab=repositories"
+            target="_blank"
+            ><img src="resources/img/fontawesome/svgs/github-square.svg" /><span
+              class="mobilehide"
+            >
+              GitHub</span
+            ></a
+          >
+          <a
+            href="https://www.linkedin.com/in/helena-heil/?locale=de_DE"
+            target="_blank"
+            ><img src="resources/img/fontawesome/svgs/linkedin.svg" /><span
+              class="mobilehide"
+            >
+              LinkedIn</span
+            ></a
+          >
+        </div>
+      </section>
+    </main>
 
-            <section class="lightblueback" id="contact">
-                <h2>Kontakt</h2>
-                <div class="contacticons lightblueback">
-                    <a href="mailto:helenahcodes@gmail.com"><img src="resources/img/fontawesome/svgs/envelope.svg"><span class="mobilehide lightblueback"> helenahcodes@gmail.com</span></a>
-                    <a href="https://github.com/helenahcodes?tab=repositories" target="_blank"><img src="resources/img/fontawesome/svgs/github-square.svg"><span class="mobilehide lightblueback"> GitHub</span></a>
-                    <a href="https://www.linkedin.com/in/helena-heil/?locale=de_DE" target="_blank"><img src="resources/img/fontawesome/svgs/linkedin.svg"><span class="mobilehide lightblueback"> LinkedIn</span></a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>© Helena Heil 2021</p>
-        </footer>
-        <script type="text/javascript" src="script.js"></script>
-    </body>
-
+    <footer>
+      <p>© Helena Heil 2021</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

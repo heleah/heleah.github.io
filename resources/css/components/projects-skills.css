@@ -17,8 +17,8 @@
   border: 1px solid #000000;
 }
 
-.button:hover > a {
-  font-size: 1.125rem;
+.button:hover {
+  transform: scale(1.125);
 }
 
 .button a {
