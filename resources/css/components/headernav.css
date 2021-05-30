@@ -1,0 +1,53 @@
+.logo {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.visual {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 26px;
+  border: 2px black dashed;
+  border-radius: 10px;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+.fullname {
+  font-family: 'Cutive Mono', monospace;
+  letter-spacing: -2px;
+}
+
+nav {
+  justify-items: right;
+}
+
+nav li {
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a:hover > * {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    width: 100%;
+  }
+
+  header {
+    margin-left: -1px;
+  }
+
+  .mobilehide {
+    display: none;
+  }
+}

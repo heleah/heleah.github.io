@@ -1,0 +1,95 @@
+#worldpopulationsii > .contents {
+  padding-left: 4%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.button {
+  display: inline-flex;
+  padding: 10px;
+  margin: 5px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+.button:hover > a {
+  font-size: 18px;
+}
+
+.button a {
+  color: #000000;
+  background-color: var(--secondary);
+  text-decoration: none;
+}
+
+.skillicons,
+.boxes {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  border: 1px solid #000000;
+  padding: 2%;
+  margin: 1% auto;
+}
+
+.skillicons img {
+  height: 50px;
+}
+
+#skills .boxes img {
+  height: 340px;
+}
+
+@media only screen and (max-width: 900px) {
+  .boxes {
+    width: 94%;
+    flex-flow: column wrap;
+    overflow: auto;
+  }
+
+  .multipleButtons {
+    display: inline;
+    width: inherit;
+    text-align: center;
+  }
+
+  .boxes img {
+    width: auto;
+    height: auto;
+  }
+
+  #skills .boxes img {
+    box-shadow: none;
+  }
+
+  .contents li {
+    margin-left: 8%;
+  }
+
+  .skillicons {
+    width: 94%;
+  }
+
+  .contents ul {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .boxes img {
+    width: 100%;
+  }
+
+  #skills .boxes img {
+    height: auto;
+  }
+
+  .boxes > * {
+    justify-content: center;
+  }
+}
