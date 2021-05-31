@@ -47,7 +47,95 @@ document.getElementById('interests').onclick = function () {
   getInfo('interests');
 };
 
-// Certificate
+// Projects
+
+const projectContainer = document.getElementById('projects');
+
+const projects = [
+  {
+    id: 'socialcard',
+    name: 'Social Card',
+    languages: 'JSX in ReactJS mit React Bootstrap',
+    description:
+      'Statischer UI React-Komponent. Das Design orientiert sich an diversen Social Media-Plattformen.',
+    pageUrl: 'http://observant-brain.surge.sh/',
+    githubUrl: 'https://github.com/helenahcodes/social-card',
+    imgSrc: 'resources/img/socialcard.jpg',
+    imgAlt: 'Social Card Preview',
+  },
+  {
+    id: 'choredoor',
+    name: 'Chore Door',
+    languages: 'Sprachen: JavaScript, HTML, CSS',
+    description:
+      'Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot(rechts) zu begegnen, der andernfalls die Spielrunde sofort beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den Serienrekord der Sitzung an. <br />(HTML und CSS großteils von Codecademy bereitgestellt)',
+    pageUrl: 'https://helenahcodes.github.io/choredoor/',
+    githubUrl: 'https://github.com/helenahcodes/choredoor',
+    imgSrc: 'resources/img/choredoor.jpg',
+    imgAlt: 'Chore Door Preview',
+  },
+];
+
+function createProjects() {
+  projects.forEach((project) => {
+    const newProject = document.createElement('article');
+    newProject.classList.add('boxes');
+    newProject.id = project.id;
+    projectContainer.appendChild(newProject);
+
+    const contentWrapper = document.createElement('section');
+    contentWrapper.classList.add('contents');
+    newProject.appendChild(contentWrapper);
+
+    const h3 = document.createElement('h3');
+    h3.innerText = project.name;
+    contentWrapper.appendChild(h3);
+
+    const languageP = document.createElement('p');
+    languageP.innerText = project.languages;
+    contentWrapper.appendChild(languageP);
+
+    const descriptionP = document.createElement('p');
+    descriptionP.innerText = project.description;
+    contentWrapper.appendChild(descriptionP);
+
+    const buttonWrapper = document.createElement('div');
+    buttonWrapper.classList.add('buttons', 'multipleButtons');
+    contentWrapper.appendChild(buttonWrapper);
+
+    const ul = document.createElement('ul');
+    buttonWrapper.appendChild(ul);
+
+    const pageButton = document.createElement('li');
+    pageButton.classList.add('button');
+    ul.appendChild(pageButton);
+
+    const pageA = document.createElement('a');
+    pageA.href = project.pageUrl;
+    pageA.target = '_blank';
+    pageA.innerText = 'Zur Webseite';
+    pageButton.appendChild(pageA);
+
+    const githubButton = document.createElement('li');
+    githubButton.classList.add('button');
+    ul.appendChild(githubButton);
+
+    const githubA = document.createElement('a');
+    githubA.href = project.githubUrl;
+    githubA.target = '_blank';
+    githubA.innerText = 'Zum Code';
+    githubButton.appendChild(githubA);
+
+    const projectImg = document.createElement('img');
+    projectImg.src = project.imgSrc;
+    projectImg.alt = project.imgAlt;
+    newProject.appendChild(projectImg);
+  });
+}
+
+createProjects();
+
+// Certificates
 
 const certificateContainer = document.getElementById('certificate-container');
 
