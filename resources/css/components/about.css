@@ -68,8 +68,11 @@
 
 #textbox {
   grid-area: 3 / 1 / 6 / 5;
+  display: flex;
   padding: 0.625rem;
-  height: 14rem;
+  height: 16rem;
+  width: 100%;
+  justify-content: center;
   border-radius: 20px;
   font-size: 1.188rem;
   overflow: auto;
@@ -79,9 +82,12 @@
 
 #textbox p {
   display: inline-block;
+  align-self: center;
+  justify-content: left;
   background-color: var(--primary-500);
   color: #ffffff;
   margin: -0.3rem;
+  text-align: left;
 }
 
 .portrait {

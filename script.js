@@ -53,11 +53,33 @@ const projectContainer = document.getElementById('projects');
 
 const projects = [
   {
+    id: 'pokemon',
+    name: 'Pokemon API App',
+    languages: 'React, Styled Components, Styleguidist',
+    description:
+      'Mobile-first Pokemon-App, bei der die Daten von einer API gezogen wurden. Auf der Pokemon-Seite kann man durch eine Suchleiste bestimmte Pokemon suchen und sie per Button auf seine Favoriten-Liste setzen. Über den Info-Button werden weitere Details über das jeweilige Pokemon angezeigt. Gruppenarbeit zusammen mit Bejan Afshar, Lukas Kurpiela und Sharine Ankenbrand, deployed mit Vercel.',
+    pageUrl: 'https://pokemon-api-app.vercel.app/',
+    githubUrl: 'https://github.com/LukasKurpiela/pokemon-api-app',
+    imgSrc: 'resources/img/pokemonapp.png',
+    imgAlt: 'Pokemon App Preview',
+  },
+  {
+    id: 'quizney',
+    name: 'Quizney App',
+    languages: 'Vanilla JS, CSS, HTML',
+    description:
+      'Mobile-first Quiz-App mit Fragen rund um Disney. Die vier Seiten sind Fragen, Bookmarks (noch nicht funktional), Eintragen von neuen Fragen (nicht funktional), sowie eine Profilseite (statisch). Deployed mit Vercel.',
+    pageUrl: 'https://quizney-hah.vercel.app/',
+    githubUrl: 'https://github.com/helenahcodes/quiz-app',
+    imgSrc: 'resources/img/quizney.png',
+    imgAlt: 'Quizney Preview',
+  },
+  {
     id: 'socialcard',
     name: 'Social Card',
     languages: 'JSX in ReactJS mit React Bootstrap',
     description:
-      'Statischer UI React-Komponent. Das Design orientiert sich an diversen Social Media-Plattformen.',
+      'Statischer UI React-Komponent. Das Design orientiert sich an diversen Social Media-Plattformen. Deployed mit Surge.',
     pageUrl: 'http://observant-brain.surge.sh/',
     githubUrl: 'https://github.com/helenahcodes/social-card',
     imgSrc: 'resources/img/socialcard.jpg',
@@ -66,9 +88,9 @@ const projects = [
   {
     id: 'choredoor',
     name: 'Chore Door',
-    languages: 'Sprachen: JavaScript, HTML, CSS',
+    languages: 'JavaScript, HTML, CSS',
     description:
-      'Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot(rechts) zu begegnen, der andernfalls die Spielrunde sofort beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den Serienrekord der Sitzung an. (HTML und CSS großteils von Codecademy bereitgestellt)',
+      'Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot(rechts) zu begegnen, der andernfalls die Spielrunde sofort beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den Serienrekord der Sitzung an. Deployed mit GitHub Pages. (HTML und CSS großteils von Codecademy bereitgestellt)',
     pageUrl: 'https://helenahcodes.github.io/choredoor/',
     githubUrl: 'https://github.com/helenahcodes/choredoor',
     imgSrc: 'resources/img/choredoor.jpg',
@@ -92,7 +114,7 @@ function createProjects() {
     contentWrapper.appendChild(h3);
 
     const languageP = document.createElement('p');
-    languageP.innerText = project.languages;
+    languageP.innerText = 'Sprachen: ' + project.languages;
     contentWrapper.appendChild(languageP);
 
     const descriptionP = document.createElement('p');
