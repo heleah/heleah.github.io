@@ -68,7 +68,7 @@ const projects = [
     name: 'Chore Door',
     languages: 'Sprachen: JavaScript, HTML, CSS',
     description:
-      'Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot(rechts) zu begegnen, der andernfalls die Spielrunde sofort beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den Serienrekord der Sitzung an. <br />(HTML und CSS großteils von Codecademy bereitgestellt)',
+      'Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot(rechts) zu begegnen, der andernfalls die Spielrunde sofort beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den Serienrekord der Sitzung an. (HTML und CSS großteils von Codecademy bereitgestellt)',
     pageUrl: 'https://helenahcodes.github.io/choredoor/',
     githubUrl: 'https://github.com/helenahcodes/choredoor',
     imgSrc: 'resources/img/choredoor.jpg',

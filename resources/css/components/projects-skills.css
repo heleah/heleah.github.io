@@ -37,6 +37,11 @@
   margin: 1% auto;
 }
 
+#projects img {
+  margin: 0 1rem;
+  height: 80%;
+}
+
 .skillicons img {
   height: 3rem;
 }
@@ -45,7 +50,8 @@
   height: 21rem;
 }
 
-#certificate-container article:nth-child(even) {
+#certificate-container article:nth-child(even),
+#projects article:nth-child(even) {
   flex-direction: row-reverse;
 }
 
