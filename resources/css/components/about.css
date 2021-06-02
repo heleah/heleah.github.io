@@ -114,10 +114,9 @@
     height: 2rem;
   }
 
-  /*   .hide {
-    font-size: 1.125rem;
-    margin-left: 0.25rem;
-  } */
+  .interactive p:hover > .hide {
+    font-size: 1rem;
+  }
 
   #textbox {
     margin-top: 1rem;
