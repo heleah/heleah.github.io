@@ -111,12 +111,16 @@
   }
 
   .intericon {
-    height: 1.8rem;
+    height: 2rem;
   }
 
   .interactive p:hover > .hide {
     font-size: 1rem;
     margin-left: 0.2rem;
+  }
+
+  .interactive p:hover > .intericon {
+    height: 1.6rem;
   }
 
   #textbox {
