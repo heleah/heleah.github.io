@@ -57,7 +57,7 @@ const projects = [
     name: 'Pokemon API App',
     languages: 'React, Styled Components, Styleguidist',
     description:
-      'Mobile-first Pokemon-App, bei der die Daten von einer API gezogen wurden. Auf der Pokemon-Seite kann man durch eine Suchleiste bestimmte Pokemon suchen und sie per Button auf seine Favoriten-Liste setzen. Über den Info-Button werden weitere Details über das jeweilige Pokemon angezeigt. Gruppenprojekt zusammen mit Bejan Afshar, Lukas Kurpiela und Sharine Ankenbrand, deployed mit Vercel.',
+      'Mobile-first Pokemon-App im Rahmen des neue fische Bootcamps, bei der die Daten von einer API gezogen wurden. Auf der Pokemon-Seite kann man durch eine Suchleiste bestimmte Pokemon suchen und sie per Button auf seine Favoriten-Liste setzen. Über den Info-Button werden weitere Details über das jeweilige Pokemon angezeigt. Gruppenprojekt zusammen mit Bejan Afshar, Lukas Kurpiela und Sharine Ankenbrand, deployed mit Vercel.',
     pageUrl: 'https://pokemon-api-app.vercel.app/',
     githubUrl: 'https://github.com/LukasKurpiela/pokemon-api-app',
     imgSrc: 'resources/img/pokemonapp.png',
@@ -68,7 +68,7 @@ const projects = [
     name: 'Quizney App',
     languages: 'Vanilla JS, CSS, HTML',
     description:
-      'Mobile-first Quiz-App mit Fragen rund um Disney. Die vier Seiten sind Fragen, Bookmarks (noch nicht funktional), Eintragen von neuen Fragen (nicht funktional), sowie eine Profilseite (statisch). Deployed mit Vercel.',
+      'Mobile-first Quiz-App mit Fragen rund um Disney im Rahmen des neue fische Bootcamps. Die Home Seite beinhaltet Fragen mit vier Antwortmöglichkeiten. Bei Klick auf eine Antwort wird angezeigt, ob diese richtig oder falsch ist. Die anderen Seiten sind Bookmarks (noch nicht funktional), Eintragen von neuen Fragen (nicht funktional), sowie eine Profilseite (statisch). Deployed mit Vercel.',
     pageUrl: 'https://quizney-hah.vercel.app/',
     githubUrl: 'https://github.com/helenahcodes/quiz-app',
     imgSrc: 'resources/img/quizney.png',
