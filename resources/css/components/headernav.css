@@ -43,10 +43,6 @@ nav li a:hover > * {
     width: 100%;
   }
 
-  header {
-    margin-left: -1px;
-  }
-
   .mobilehide {
     display: none;
   }
