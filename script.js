@@ -53,6 +53,17 @@ const projectContainer = document.getElementById('projects');
 
 const projects = [
   {
+    id: 'adventeire',
+    name: 'Adventéire [in Bearbeitung]',
+    languages: 'React, Styled Components, Styleguidist',
+    description:
+      'Mobile-first Abschlussarbeit für das neue fische Bootcamps. Nutzer können durch eine Liste von Sehenswürdigkeiten in Irland browsen, bestimmte Sehenswürdigkeiten als Favorit markieren, sowie eine Detailansicht aufrufen. <br> Todo: In Zukunft sollen die Nutzer außerdem nach County filtern können.',
+    pageUrl: '',
+    githubUrl: 'https://github.com/helenahcodes/adventeire',
+    imgSrc: 'resources/img/adventeire_preview.png',
+    imgAlt: 'Adventéire Preview',
+  },
+  {
     id: 'pokemon',
     name: 'Pokemon API App',
     languages: 'React, Styled Components, Styleguidist',
