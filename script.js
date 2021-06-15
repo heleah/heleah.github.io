@@ -57,8 +57,8 @@ const projects = [
     name: 'Adventéire [in Bearbeitung]',
     languages: 'React, Styled Components, Styleguidist',
     description:
-      'Mobile-first Abschlussarbeit für das neue fische Bootcamps. Nutzer können durch eine Liste von Sehenswürdigkeiten in Irland browsen, bestimmte Sehenswürdigkeiten als Favorit markieren, sowie eine Detailansicht aufrufen. <br> Todo: In Zukunft sollen die Nutzer außerdem nach County filtern können.',
-    pageUrl: '',
+      'Mobile-first Abschlussarbeit für das neue fische Bootcamps. Nutzer können durch eine Liste von Sehenswürdigkeiten in Irland browsen, bestimmte Sehenswürdigkeiten als Favorit markieren, sowie eine Detailansicht aufrufen. <br> Todo: In Zukunft sollen die Nutzer außerdem nach County filtern können. <br/> Deployed mit Heroku.',
+    pageUrl: 'https://adventeire.herokuapp.com/',
     githubUrl: 'https://github.com/helenahcodes/adventeire',
     imgSrc: 'resources/img/adventeire_preview.png',
     imgAlt: 'Adventéire Preview',
@@ -73,6 +73,17 @@ const projects = [
     githubUrl: 'https://github.com/LukasKurpiela/pokemon-api-app',
     imgSrc: 'resources/img/pokemonapp.png',
     imgAlt: 'Pokemon App Preview',
+  },
+  {
+    id: 'quizney-react',
+    name: 'Quizney App (React)',
+    languages: 'React, Styled Components',
+    description:
+      'Mobile-first Quiz-App mit Fragen rund um Disney im Rahmen des neue fische Bootcamps. Die Home Seite beinhaltet Fragen mit vier Antwortmöglichkeiten. Bei Klick auf eine Antwort wird angezeigt, ob diese richtig oder falsch ist. Die anderen Seiten sind Bookmarks, welche auf Klick auf das Kronen-Icon hinzugefügt bzw. entfernt werden. Das Neue-Fragen-Formulat ist (noch) nicht funktional, genau wie die Profilseite (statisch). Deployed mit Vercel.',
+    pageUrl: '',
+    githubUrl: 'https://github.com/helenahcodes/quizney-react',
+    imgSrc: 'resources/img/quizney.png',
+    imgAlt: 'Quizney React Preview',
   },
   {
     id: 'quizney',
