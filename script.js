@@ -80,7 +80,7 @@ const projects = [
     languages: 'React, Styled Components',
     description:
       'Mobile-first Quiz-App mit Fragen rund um Disney im Rahmen des neue fische Bootcamps. Die Home Seite beinhaltet Fragen mit vier Antwortmöglichkeiten. Bei Klick auf eine Antwort wird angezeigt, ob diese richtig oder falsch ist. Die anderen Seiten sind Bookmarks, welche auf Klick auf das Kronen-Icon hinzugefügt bzw. entfernt werden. Das Neue-Fragen-Formulat ist (noch) nicht funktional, genau wie die Profilseite (statisch). Deployed mit Vercel.',
-    pageUrl: '',
+    pageUrl: 'https://quizney-react.vercel.app/',
     githubUrl: 'https://github.com/helenahcodes/quizney-react',
     imgSrc: 'resources/img/quizney.png',
     imgAlt: 'Quizney React Preview',
@@ -236,6 +236,15 @@ const certificates = [
       'https://www.codecademy.com/profiles/datschx/certificates/56fb1e71303e37b643bb1905f31c8a09',
     certImgSrc: './resources/img/TSCert.jpg',
     certAlt: 'TypeScript Certificate',
+  },
+  {
+    name: 'Bootstrap at Codecademy',
+    id: 'bootstrap',
+    contents: ['Grid', 'Utilities and Components'],
+    certSrc:
+      'https://www.codecademy.com/profiles/datschx/certificates/0595479d03627a8cb816b069000e4d06',
+    certImgSrc: './resources/img/BootstrapCert.png',
+    certAlt: 'Bootstrap Certificate',
   },
 ];
 
