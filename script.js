@@ -54,10 +54,10 @@ const projectContainer = document.getElementById('projects');
 const projects = [
   {
     id: 'adventeire',
-    name: 'Adventéire [in Bearbeitung]',
+    name: 'adventéire',
     languages: 'React, Styled Components, Styleguidist',
     description:
-      'Mobile-first Abschlussarbeit für das neue fische Bootcamps. Nutzer können durch eine Liste von Sehenswürdigkeiten in Irland browsen, bestimmte Sehenswürdigkeiten als Favorit markieren, sowie eine Detailansicht aufrufen. <br/> Todo: In Zukunft sollen die Nutzer außerdem nach County filtern können. <br/> Deployed mit Heroku.',
+      'Mobile-first Abschlussarbeit für das neue fische Bootcamps. Nutzer können durch eine Liste von Sehenswürdigkeiten in Irland browsen, bestimmte Sehenswürdigkeiten als Favorit markieren, eine Detailansicht aufrufen, sowie Sehenswürdigkeiten auf eine eigene Reisroute setzen. Deployed mit Heroku.',
     pageUrl: 'https://adventeire.herokuapp.com/',
     githubUrl: 'https://github.com/helenahcodes/adventeire',
     imgSrc: 'resources/img/adventeire_preview.png',
@@ -185,6 +185,23 @@ const certificateContainer = document.getElementById('certificate-container');
 
 const certificates = [
   {
+    name: 'Web Development Bootcamp at neuefische GmbH',
+    id: 'neuefische',
+    contents: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'Shell',
+      'Frontend-Anwendungen mit React & JSX',
+      'Backend-Entwicklung mit Node.js, Express und MongoDB',
+      'APIs',
+      'Git Workflow und GitHub',
+    ],
+    certSrc: './resources/HelenaHeil_neuefische_certificate.pdf#toolbar=0',
+    certImgSrc: './resources/img/neuefischeCert.png',
+    certAlt: 'Web Development Certificate neuefische',
+  },
+  {
     name: 'Web Development at Codecademy',
     id: 'webdev',
     contents: [
@@ -202,7 +219,7 @@ const certificates = [
     certSrc:
       'https://www.codecademy.com/profiles/datschx/certificates/5b32457b646caa5007c30975',
     certImgSrc: './resources/img/WebDevCert.jpg',
-    certAlt: 'Web Development Certificate',
+    certAlt: 'Web Development Certificate Codecademy',
   },
   {
     name: 'PHP at Codecademy',
@@ -283,7 +300,7 @@ function createCertificates() {
     const aTag = document.createElement('a');
     aTag.href = certificate.certSrc;
     aTag.target = '_blank';
-    aTag.innerText = 'Zur Verifizierung';
+    aTag.innerText = 'Zur Vollansicht';
     buttonP.appendChild(aTag);
 
     const certImg = document.createElement('img');
