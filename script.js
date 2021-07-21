@@ -9,9 +9,9 @@ function getInfo(id) {
       text =
         'Nach dem <em>Abitur</em> studierte ich an der TH Köln das Studienfach <em>Mehrsprachige Kommunikation</em> mit den Sprachen <em>Spanisch und Englisch</em> sowie dem Schwerpunkt <em>Kultur & Medien</em>.' +
         '<br>' +
-        'Im Juli 2020 entschied ich mich zu einer Umschulung in den Bereich Webentwicklung und widmete mich bis November mit Begeisterung dem <em>Webentwicklungskurs von Codecademy</em> (Zertifikat siehe unten).' +
+        'Im Juli 2020 entschied ich mich zu einer Umschulung in den Bereich Webentwicklung und widmete mich bis November mit Begeisterung dem <em>Webentwicklungskurs von Codecademy</em> (Zertifikat s.u.).' +
         '<br />' +
-        'Seit April 2021 nehme ich nun am <em>Web Development Bootcamp von neue fische</em> teil.';
+        'Von April bis Juli 2021 hatte ich die Gelegenheit, im <em>Web Development Bootcamp von neue fische</em> (Zertifikat s.u.) meine bis dahin erworbenen Kenntnisse zu vertiefen und erweitern.';
       break;
     case 'work':
       text =
