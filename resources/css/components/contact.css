@@ -17,6 +17,11 @@
   margin-right: 0.1rem;
 }
 
+#contact img:hover,
+.contacticons a:hover > img {
+  transform: scale(1.125);
+}
+
 .contacticons {
   display: flex;
   width: 90%;

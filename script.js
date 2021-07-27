@@ -136,7 +136,8 @@ function createProjects() {
     contentWrapper.appendChild(h3);
 
     const languageP = document.createElement('p');
-    languageP.innerText = 'Sprachen: ' + project.languages;
+    languageP.innerText = project.languages;
+    languageP.style.fontWeight = '700';
     contentWrapper.appendChild(languageP);
 
     const descriptionP = document.createElement('p');
