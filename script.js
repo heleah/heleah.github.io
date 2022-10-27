@@ -1,3 +1,73 @@
+// Work Experience
+
+const experienceContainer = document.querySelector(".experience-jobs");
+
+const experience = [
+  {
+    id: "mobilab",
+    position: "Full Stack Engineer",
+    company: "MobiLab Solutions",
+    time: "05/2022 - 09/2022",
+    location: "Köln",
+    description:
+      "Interne und externe Projekte von Web-Plattformen mit React (Next.js), TypeScript, styled-components, REST APIs, Recoil, react-query anhand von Figma-Designs.",
+  },
+  {
+    id: "fashion-digital",
+    position:
+      "Entwicklerin Omnichannel and Sales (E-Commerce) / Consumer Applications",
+    company: "Fashion Digital",
+    time: "09/2021 - 04/2022",
+    location: "Düsseldorf / Remote",
+    description:
+      "Frontend-Entwicklung von Online-Shops mit React, Apollo GraphQL, TypeScript, serverseitiges Node.js, HTML5, CSS3, Dust.js für Mobile und Desktop.",
+  },
+  {
+    id: "neuefische",
+    position: "Trainee Web Development",
+    company: "neuefische",
+    time: "04/2021 - 07/2021",
+    location: "Remote",
+    description:
+      "Intensiv-Coding-Bootcamp in 540 Stunden Programmierpraxis mit Eigenentwicklung einer App als Abschlussarbeit hauptsächlich mit React und styled-components.",
+  },
+];
+
+function createExperience() {
+  experience.forEach((experience) => {
+    const newExperience = document.createElement("section");
+    newExperience.classList.add("job-box");
+    newExperience.id = experience.id;
+    experienceContainer.appendChild(newExperience);
+
+    const jobTitle = document.createElement("h4");
+    jobTitle.innerHTML = experience.position;
+    newExperience.appendChild(jobTitle);
+
+    const company = document.createElement("p");
+    company.classList.add("job-company");
+    company.innerHTML = experience.company;
+    newExperience.appendChild(company);
+
+    const timeFrame = document.createElement("p");
+    timeFrame.classList.add("job-time");
+    timeFrame.innerHTML = experience.time;
+    newExperience.appendChild(timeFrame);
+
+    const location = document.createElement("p");
+    location.classList.add("job-location");
+    location.innerHTML = experience.location;
+    newExperience.appendChild(location);
+
+    const description = document.createElement("p");
+    description.classList.add("job-description");
+    description.innerHTML = experience.description;
+    newExperience.appendChild(description);
+  });
+}
+
+createExperience();
+
 // Projects
 
 const projectContainer = document.getElementById("projects");
@@ -252,91 +322,3 @@ function createCertificates() {
 }
 
 createCertificates();
-
-/*<div class="boxes" id="webdev">
-          <figure>
-            <img
-              src="resources/img/WebDevCert.jpg"
-              alt="Web Development Certificate"
-            />
-          </figure>
-          <div class="contents">
-            <h3>Web Development at Codecademy</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Kommandozeile</li>
-              <li>Git und GitHub</li>
-              <li>Front-End-Anwendungen mit React & JSX</li>
-              <li>Back-End-Entwicklung mit Node.js</li>
-              <li>SQL & Datenbanken</li>
-              <li>APIs</li>
-              <li>Test Driven Development (Mocha & Node.js)</li>
-            </ul>
-            <div class="buttons">
-              <p class="button">
-                <a
-                  href="https://www.codecademy.com/profiles/datschx/certificates/5b32457b646caa5007c30975"
-                  target="_blank"
-                  >Zur Verifizierung</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="boxes" id="php">
-          <div class="contents">
-            <h3>PHP at Codecademy</h3>
-            <ul>
-              <li>Funktionen (inkl. eingebaute)</li>
-              <li>Arrays</li>
-              <li>HTML Form Handling</li>
-              <li>Bedingungen und logische Operatoren</li>
-              <li>Schleifen</li>
-              <li>Datenvalidierung</li>
-              <li>Klassen und Objekte</li>
-            </ul>
-            <div class="buttons">
-              <p class="button">
-                <a
-                  href="https://www.codecademy.com/profiles/datschx/certificates/d24ce3aa4ed99ac04afffec4a78e2e44"
-                  target="_blank"
-                  >Zur Verifizierung</a
-                >
-              </p>
-            </div>
-          </div>
-          <figure>
-            <img src="resources/img/PHPCert.jpg" alt="PHP Certificate" />
-          </figure>
-        </div>
-
-
-        <div class="boxes" id="typescript">
-          <figure>
-            <img src="resources/img/TSCert.jpg" alt="TypeScript Certificate" />
-          </figure>
-          <div class="contents">
-            <h3>TypeScript at Codecademy</h3>
-            <ul>
-              <li>Types</li>
-              <li>Funktionen</li>
-              <li>Komplexe Typen (Arrays, Custom Types)</li>
-              <li>Union Types</li>
-              <li>Type Narrowing</li>
-              <li>Advanced Object Types (Interfaces)</li>
-            </ul>
-            <div class="buttons">
-              <p class="button">
-                <a
-                  href="https://www.codecademy.com/profiles/datschx/certificates/56fb1e71303e37b643bb1905f31c8a09"
-                  target="_blank"
-                  >Zur Verifizierung</a
-                >
-              </p>
-            </div>
-          </div>
-        </div> */

@@ -21,6 +21,27 @@
   padding: 1rem 8rem;
 }
 
+.experience-jobs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-box {
+  width: 330px;
+  padding: 1rem;
+  background: var(--primary);
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px var(--primary-500);
+}
+
+.job-company,
+.job-time,
+.job-location {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
 @media only screen and (max-width: 768px) {
   .about-me {
     flex-direction: column-reverse;
@@ -35,5 +56,15 @@
   .portrait {
     width: 50%;
     height: 50%;
+  }
+
+  .experience {
+    padding: 1rem;
+  }
+
+  .experience-jobs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }

@@ -28,7 +28,8 @@
   display: flex;
   width: 80%;
   justify-content: space-around;
-  border: 1px solid #000000;
+  background: var(--primary);
+  border: 1px solid #000;
   border-radius: 10px;
   box-shadow: 1px 1px 3px var(--primary-500);
   padding: 2%;

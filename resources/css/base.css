@@ -1,6 +1,7 @@
 :root {
   --primary: #a9d8e6;
   --primary-100: #e2efff;
+  --primary-200: #cbebf5;
   --primary-500: #2c5866;
 
   --secondary: #e99a70;
@@ -36,7 +37,7 @@ header {
 }
 
 main {
-  background-color: var(--primary);
+  background-color: var(--primary-200);
   min-height: 100vh;
   overflow: auto;
   padding-bottom: 10rem;
