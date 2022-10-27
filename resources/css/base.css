@@ -1,9 +1,11 @@
 :root {
   --primary: #a9d8e6;
   --primary-100: #e2efff;
+  --primary-200: #cbebf5;
   --primary-500: #2c5866;
 
   --secondary: #e99a70;
+  --secondary-100: #faa578;
 }
 
 *,
@@ -16,8 +18,8 @@ body {
   position: relative;
   margin: 0;
   line-height: 1.5;
-  font-size: 1.5;
-  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -25,16 +27,17 @@ header {
   z-index: 1;
   width: 100%;
   position: fixed;
-  height: 5rem;
+  height: 6rem;
   align-items: center;
   justify-content: space-between;
   top: 0;
+  padding: 0 2.5rem;
   background-color: var(--primary-500);
   color: white;
 }
 
 main {
-  background-color: var(--primary);
+  background-color: var(--primary-200);
   min-height: 100vh;
   overflow: auto;
   padding-bottom: 10rem;
@@ -52,6 +55,6 @@ footer {
 
 .wrapper {
   position: relative;
-  top: 5rem;
+  top: 6rem;
   padding: 1% 2%;
 }

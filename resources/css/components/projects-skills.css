@@ -8,6 +8,7 @@
   display: inline-flex;
   padding: 0.625rem;
   margin: 0.3rem;
+  font-size: 1.1rem;
   background-color: var(--secondary);
   border-radius: 10px;
   border: 1px solid #000000;
@@ -15,11 +16,11 @@
 
 .button:hover {
   transform: scale(1.125);
+  background-color: var(--secondary-100);
 }
 
 .button a {
   color: #000000;
-  background-color: var(--secondary);
   text-decoration: none;
 }
 
@@ -28,17 +29,24 @@
   display: flex;
   width: 80%;
   justify-content: space-around;
-  border: 1px solid #000000;
+  background: var(--primary);
+  border: 1px solid #000;
   border-radius: 10px;
   box-shadow: 1px 1px 3px var(--primary-500);
   padding: 2%;
-  margin: 1rem auto;
+  margin: 2rem auto;
+}
+
+.boxes img {
+  align-self: center;
 }
 
 #projects img {
   margin: 0 1rem;
-  min-width: 20vw;
-  height: auto;
+  max-width: 300px;
+  max-height: 400px;
+  width: 50%;
+  height: 50%;
 }
 
 .skillicons img {
