@@ -38,7 +38,7 @@ nav li a:hover > * {
   text-decoration: underline;
 }
 
-img {
+header img {
   width: 50px;
   cursor: pointer;
 }
@@ -67,7 +67,7 @@ img {
     display: none;
   }
 
-  img {
+  header img {
     width: 30px;
   }
 }
