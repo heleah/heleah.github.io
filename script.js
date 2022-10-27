@@ -1,3 +1,25 @@
+// Language Switch
+let currentLocale = "en";
+
+const header = document.querySelector("header");
+const switchFlagImg = document.createElement("img");
+switchFlagImg.src =
+  currentLocale === "en"
+    ? "resources/img/icons8-germany-100.png"
+    : "resources/img/icons8-great-britain-100.png";
+switchFlagImg.alt =
+  currentLocale === "en" ? "Zu Deutsch wechseln" : "Switch to English";
+switchFlagImg.addEventListener("click", changeCurrentLocale);
+header.appendChild(switchFlagImg);
+
+function changeCurrentLocale() {
+  return currentLocale === "en"
+    ? (currentLocale = "de")
+    : (currentLocale = "en");
+}
+
+console.log(currentLocale);
+
 // Work Experience
 
 const experienceContainer = document.querySelector(".experience-jobs");
