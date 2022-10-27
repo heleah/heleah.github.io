@@ -35,10 +35,16 @@
   margin: 1rem auto;
 }
 
+.boxes img {
+  align-self: center;
+}
+
 #projects img {
   margin: 0 1rem;
-  min-width: 20vw;
-  height: auto;
+  max-width: 300px;
+  max-height: 400px;
+  width: 50%;
+  height: 50%;
 }
 
 .skillicons img {
