@@ -1,11 +1,10 @@
 .logo {
-  margin-left: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .visual {
-  font-family: 'Cutive Mono', monospace;
+  font-family: "Cutive Mono", monospace;
   font-size: 1.625rem;
   border: 2px black dashed;
   border-radius: 10px;
@@ -14,7 +13,7 @@
 }
 
 .fullname {
-  font-family: 'Cutive Mono', monospace;
+  font-family: "Cutive Mono", monospace;
   letter-spacing: -2px;
 }
 
@@ -24,7 +23,7 @@ nav {
 
 nav li {
   display: inline-flex;
-  margin-right: 1.25rem;
+  margin-left: 2.5rem;
 }
 
 nav li a {

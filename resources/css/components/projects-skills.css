@@ -15,11 +15,11 @@
 
 .button:hover {
   transform: scale(1.125);
+  background-color: var(--secondary-100);
 }
 
 .button a {
   color: #000000;
-  background-color: var(--secondary);
   text-decoration: none;
 }
 
