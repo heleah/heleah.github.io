@@ -42,7 +42,7 @@ nav li a:hover > * {
     width: 100%;
   }
 
-  ul {
+  nav ul {
     margin: 0;
     padding: 0;
     font-size: 1rem;
