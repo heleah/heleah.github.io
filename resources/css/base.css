@@ -58,3 +58,14 @@ footer {
   top: 6rem;
   padding: 1% 2%;
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 5rem;
+    padding: 1rem;
+  }
+
+  .wrapper {
+    top: 5rem;
+  }
+}

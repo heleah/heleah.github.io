@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <title>Helenas Portfolio</title>
+    <title data-i18n-key="app-title"></title>
     <link rel="stylesheet" href="resources/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -12,8 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="resources/css/fontawesome/css/all.css" />
-    <link rel="icon" type="image/png" href="resources/icon.png" />
+    <link rel="icon" type="image/png" href="resources/img/icon.png" />
   </head>
 
   <body>
@@ -24,47 +23,38 @@
       </p>
       <nav>
         <ul>
-          <li><a href="#about">Über mich</a></li>
-          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#about" data-i18n-key="about-me"></a></li>
+          <li><a href="#projects" data-i18n-key="projects"></a></li>
           <li>
-            <a href="#skills"
-              >Kenntnisse<span class="mobilehide"> & Zertifikate</span></a
-            >
+            <a href="#skills" data-i18n-key="skills-certificates-nav"></a>
           </li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#contact" data-i18n-key="contact"></a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main">
       <section class="wrapper" id="about">
-        <h2>Über mich</h2>
+        <h2 data-i18n-key="about-me"></h2>
         <div class="about-me">
           <div class="about-text">
-            <h3>Hallo und herzlich willkommen auf meinem Portfolio!</h3>
-            <p>
-              Ich bin Helena, Junior Frontend Entwicklerin mit der Motivation
-              sowohl mich als auch Projekte ständig auf neue Arten und Weisen
-              weiter zu entwickeln. <br />
-              Während des letzten Jahres im Beruf habe ich in internationalen,
-              cross-funktionalen Teams Erfahrungen mit unter anderem React und
-              Next.js mit TypeScript, styled-components und Tailwind gesammelt.
-            </p>
+            <h3 data-i18n-key="welcome"></h3>
+            <p data-i18n-key="intro"></p>
           </div>
           <img src="resources/img/HelenaHeil.jpg" class="portrait" />
         </div>
         <div class="experience">
-          <h3>Berufserfahrung</h3>
+          <h3 data-i18n-key="work-experience"></h3>
           <article class="experience-jobs"></article>
         </div>
       </section>
 
       <section class="wrapper" id="projects">
-        <h2>Projekte</h2>
+        <h2 data-i18n-key="projects"></h2>
       </section>
 
       <section class="wrapper" id="skills">
-        <h2>Kenntnisse & Zertifikate</h2>
+        <h2 data-i18n-key="skills-certificates"></h2>
         <div class="skillicons">
           <img src="resources/img/fontawesome/svgs/html5.svg" title="HTML" />
           <img src="resources/img/fontawesome/svgs/css3-alt.svg" title="CSS" />
@@ -81,7 +71,7 @@
       </section>
 
       <section class="wrapper" id="contact">
-        <h2>Kontakt</h2>
+        <h2 data-i18n-key="contact"></h2>
         <div class="contacticons">
           <a href="mailto:helenahcodes@gmail.com"
             ><img src="resources/img/fontawesome/svgs/envelope.svg" /><span

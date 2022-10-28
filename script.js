@@ -1,3 +1,54 @@
+// Language Switch
+const defaultLocale = "en";
+let currentLocale;
+let translations = {};
+
+const header = document.querySelector("header");
+const switchFlagImg = document.createElement("img");
+header.appendChild(switchFlagImg);
+
+document.addEventListener("DOMContentLoaded", () => {
+  setLocale(defaultLocale);
+  bindLocaleSwitcher();
+});
+
+function bindLocaleSwitcher() {
+  switchFlagImg.src = "resources/img/icons8-germany-100.png";
+  switchFlagImg.alt = "Zu Deutsch wechseln";
+  switchFlagImg.addEventListener("click", () =>
+    setLocale(currentLocale === "en" ? "de" : "en")
+  );
+}
+
+async function setLocale(newLocale) {
+  if (newLocale === currentLocale) return;
+  const newTranslations = await fetchTranslations(newLocale);
+  currentLocale = newLocale;
+  translations = newTranslations;
+  switchFlagImg.src =
+    currentLocale === "en"
+      ? "resources/img/icons8-germany-100.png"
+      : "resources/img/icons8-great-britain-100.png";
+  switchFlagImg.alt =
+    currentLocale === "en" ? "Zu Deutsch wechseln" : "Switch to English";
+  translatePage();
+}
+
+async function fetchTranslations(newLocale) {
+  const res = await fetch(`lang/${newLocale}.json`);
+  return await res.json();
+}
+
+function translatePage() {
+  document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
+}
+
+function translateElement(el) {
+  const key = el.getAttribute("data-i18n-key");
+  const translation = translations[key];
+  el.innerHTML = translation;
+}
+
 // Work Experience
 
 const experienceContainer = document.querySelector(".experience-jobs");
@@ -8,17 +59,17 @@ const experience = [
     position: "Full Stack Engineer",
     company: "MobiLab Solutions",
     time: "05/2022 - 09/2022",
-    location: "Köln",
+    location: "cgn",
     description:
       "Interne und externe Projekte von Web-Plattformen mit React (Next.js), TypeScript, styled-components, REST APIs, Recoil, react-query anhand von Figma-Designs.",
   },
   {
-    id: "fashion-digital",
+    id: "fadi",
     position:
-      "Entwicklerin Omnichannel and Sales (E-Commerce) / Consumer Applications",
+      "Developer Omnichannel and Sales (E-Commerce) / Consumer Applications",
     company: "Fashion Digital",
     time: "09/2021 - 04/2022",
-    location: "Düsseldorf / Remote",
+    location: "remote",
     description:
       "Frontend-Entwicklung von Online-Shops mit React, Apollo GraphQL, TypeScript, serverseitiges Node.js, HTML5, CSS3, Dust.js für Mobile und Desktop.",
   },
@@ -27,7 +78,7 @@ const experience = [
     position: "Trainee Web Development",
     company: "neuefische",
     time: "04/2021 - 07/2021",
-    location: "Remote",
+    location: "remote",
     description:
       "Intensiv-Coding-Bootcamp in 540 Stunden Programmierpraxis mit Eigenentwicklung einer App als Abschlussarbeit hauptsächlich mit React und styled-components.",
   },
@@ -56,12 +107,12 @@ function createExperience() {
 
     const location = document.createElement("p");
     location.classList.add("job-location");
-    location.innerHTML = experience.location;
+    location.setAttribute("data-i18n-key", experience.location);
     newExperience.appendChild(location);
 
     const description = document.createElement("p");
     description.classList.add("job-description");
-    description.innerHTML = experience.description;
+    description.setAttribute("data-i18n-key", "description-" + experience.id);
     newExperience.appendChild(description);
   });
 }
@@ -151,7 +202,7 @@ function createProjects() {
     contentWrapper.appendChild(languageP);
 
     const descriptionP = document.createElement("p");
-    descriptionP.innerText = project.description;
+    descriptionP.setAttribute("data-i18n-key", "description-" + project.id);
     contentWrapper.appendChild(descriptionP);
 
     const buttonWrapper = document.createElement("div");
@@ -203,10 +254,10 @@ const certificates = [
       "CSS3",
       "JavaScript",
       "Shell",
-      "Frontend-Anwendungen mit React & JSX",
-      "Backend-Entwicklung mit Node.js, Express und MongoDB",
+      "frontend-react-jsx",
+      "backend-node-exp-mong",
       "APIs",
-      "Git Workflow und GitHub",
+      "Git Workflow, GitHub",
     ],
     certSrc: "./resources/HelenaHeil_neuefische_certificate.pdf#toolbar=0",
     certImgSrc: "./resources/img/neuefischeCert.png",
@@ -220,12 +271,12 @@ const certificates = [
       "CSS3",
       "JavaScript",
       "Shell",
-      "Git Workflow und GitHub",
-      "Frontend-Anwendungen mit React & JSX",
-      "Backend-Entwicklung mit Node.js",
-      "SQL & Datenbanken",
+      "Git Workflow, GitHub",
+      "frontend-react-jsx",
+      "backend-node",
+      "sql-dbs",
       "APIs",
-      "Test Driven Development mit Mocha & Node.js",
+      "tdd",
     ],
     certSrc:
       "https://www.codecademy.com/profiles/datschx/certificates/5b32457b646caa5007c30975",
@@ -236,13 +287,13 @@ const certificates = [
     name: "PHP at Codecademy",
     id: "php",
     contents: [
-      "Funktionen (inkl. eingebaute)",
+      "functions-incl",
       "Arrays",
       "HTML Form Handling",
-      "Bedingungen und logische Operatoren",
-      "Schleifen",
-      "Datenvalidierung",
-      "Klassen und Objekte",
+      "conditions-logical",
+      "loops",
+      "data-validation",
+      "classes-obj",
     ],
     certSrc:
       "https://www.codecademy.com/profiles/datschx/certificates/d24ce3aa4ed99ac04afffec4a78e2e44",
@@ -254,8 +305,8 @@ const certificates = [
     id: "typescript",
     contents: [
       "Types",
-      "Funktionen",
-      "Komplexe Typen (Arrays, Custom Types",
+      "functions",
+      "complex-types",
       "Union Types",
       "Type Narrowing",
       "Advanced Object Types (Interfaces)",
@@ -296,7 +347,11 @@ function createCertificates() {
 
     certificate.contents.forEach((content) => {
       const li = document.createElement("li");
-      li.innerText = content;
+      if (content === content.toLowerCase()) {
+        li.setAttribute("data-i18n-key", content);
+      } else {
+        li.innerText = content;
+      }
       ul.appendChild(li);
     });
 
@@ -311,7 +366,7 @@ function createCertificates() {
     const aTag = document.createElement("a");
     aTag.href = certificate.certSrc;
     aTag.target = "_blank";
-    aTag.innerText = "Vollansicht";
+    aTag.setAttribute("data-i18n-key", "full-view");
     buttonP.appendChild(aTag);
 
     const certImg = document.createElement("img");

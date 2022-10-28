@@ -19,6 +19,7 @@
 
 nav {
   justify-items: right;
+  margin-right: -20rem;
 }
 
 nav li {
@@ -37,9 +38,18 @@ nav li a:hover > * {
   text-decoration: underline;
 }
 
+header img {
+  width: 50px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   html {
     width: 100%;
+  }
+
+  nav {
+    margin-right: 2rem;
   }
 
   nav ul {
@@ -49,7 +59,15 @@ nav li a:hover > * {
     text-align: right;
   }
 
+  nav li {
+    margin-left: 1rem;
+  }
+
   .mobilehide {
     display: none;
+  }
+
+  header img {
+    width: 30px;
   }
 }
