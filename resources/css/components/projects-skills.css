@@ -103,6 +103,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .skillicons img {
+    height: 2.5rem;
+  }
+
   .boxes img {
     width: 60vw;
     margin-top: 0.5rem;
