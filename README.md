@@ -1,4 +1,5 @@
-# helenahcodes.github.io
+# heleah.github.io
+
 ## My Portfolio Website
 
 On this website, I am displaying information about myself, projects I have worked on, and also certificates from successfully completed online courses in the field of Web Development.
