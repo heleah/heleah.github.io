@@ -128,19 +128,24 @@ const projects = [
     id: "adventeire",
     name: "adventéire",
     languages: "React, Styled Components, Styleguidist",
-    description:
-      "Mobile-first Abschlussarbeit für das neue fische Bootcamps. Nutzer können durch eine Liste von Sehenswürdigkeiten in Irland browsen, bestimmte Sehenswürdigkeiten als Favorit markieren, eine Detailansicht aufrufen, sowie Sehenswürdigkeiten auf eine eigene Reisroute setzen. Deployed mit Heroku.",
     pageUrl: "https://adventeire.herokuapp.com/",
     githubUrl: "https://github.com/heleah/adventeire",
     imgSrc: "resources/img/adventeire_preview.png",
     imgAlt: "Adventéire Preview",
   },
   {
+    id: "rest-countries",
+    name: "REST Countries API",
+    languages: "Next.js, React, Bootstrap, React Bootstrap, next-themes",
+    pageUrl: "https://frontendmentor-rest-countries.vercel.app/",
+    githubUrl: "https://github.com/heleah/frontendmentor-rest-countries",
+    imgSrc: "resources/img/restcountries.png",
+    imgAlt: "REST Countries API Preview",
+  },
+  {
     id: "pokemon",
     name: "Pokemon API App",
     languages: "React, Styled Components, Styleguidist",
-    description:
-      "Mobile-first Pokemon-App im Rahmen des neue fische Bootcamps, bei der die Daten von einer API gezogen wurden. Auf der Pokemon-Seite kann man durch eine Suchleiste bestimmte Pokemon suchen und sie per Button auf seine Favoriten-Liste setzen. Über den Info-Button werden weitere Details über das jeweilige Pokemon angezeigt. Gruppenprojekt zusammen mit Bejan Afshar, Lukas Kurpiela und Sharine Ankenbrand, deployed mit Vercel.",
     pageUrl: "https://pokemon-api-app.vercel.app/",
     githubUrl: "https://github.com/heleah/pokemon-api-app",
     imgSrc: "resources/img/pokemonapp.png",
@@ -150,8 +155,6 @@ const projects = [
     id: "quizney-react",
     name: "Quizney App (React)",
     languages: "React, Styled Components",
-    description:
-      "Mobile-first Quiz-App mit Fragen rund um Disney im Rahmen des neue fische Bootcamps. Die Home Seite beinhaltet Fragen mit vier Antwortmöglichkeiten. Bei Klick auf eine Antwort wird angezeigt, ob diese richtig oder falsch ist. Die anderen Seiten sind Bookmarks, welche auf Klick auf das Kronen-Icon hinzugefügt bzw. entfernt werden. Das Neue-Fragen-Formulat ist (noch) nicht funktional, genau wie die Profilseite (statisch). Deployed mit Vercel.",
     pageUrl: "https://quizney-react.vercel.app/",
     githubUrl: "https://github.com/heleah/quizney-react",
     imgSrc: "resources/img/quizney.png",
@@ -161,8 +164,6 @@ const projects = [
     id: "quizney",
     name: "Quizney App",
     languages: "Vanilla JS, CSS, HTML",
-    description:
-      "Mobile-first Quiz-App mit Fragen rund um Disney im Rahmen des neue fische Bootcamps. Die Home Seite beinhaltet Fragen mit vier Antwortmöglichkeiten. Bei Klick auf eine Antwort wird angezeigt, ob diese richtig oder falsch ist. Die anderen Seiten sind Bookmarks (noch nicht funktional), Eintragen von neuen Fragen (nicht funktional), sowie eine Profilseite (statisch). Deployed mit Vercel.",
     pageUrl: "https://quizney-hah.vercel.app/",
     githubUrl: "https://github.com/heleah/quiz-app",
     imgSrc: "resources/img/quizney.png",
@@ -172,8 +173,6 @@ const projects = [
     id: "choredoor",
     name: "Chore Door",
     languages: "JavaScript, HTML, CSS",
-    description:
-      "Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot(rechts) zu begegnen, der andernfalls die Spielrunde sofort beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den Serienrekord der Sitzung an. Deployed mit GitHub Pages. (HTML und CSS großteils von Codecademy bereitgestellt)",
     pageUrl: "https://heleah.github.io/choredoor/",
     githubUrl: "https://github.com/heleah/choredoor",
     imgSrc: "resources/img/choredoor.jpg",
