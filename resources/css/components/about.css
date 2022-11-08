@@ -15,6 +15,7 @@
   height: 76%;
   border-radius: 25%;
   box-shadow: 8px 8px 10px var(--primary-500);
+  animation: shootIn 1500ms ease-out;
 }
 
 .experience {
@@ -40,6 +41,18 @@
 .job-location {
   margin: 0;
   font-size: 1.1rem;
+}
+
+@keyframes shootIn {
+  0% {
+    transform: translateX(100vw);
+  }
+  50% {
+    transform: translateX(4rem) scale(1.1) rotate(10deg);
+  }
+  100% {
+    transform: translateX(1);
+  }
 }
 
 @media only screen and (max-width: 768px) {
