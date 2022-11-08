@@ -11,8 +11,7 @@
 
 .portrait {
   align-self: center;
-  width: 24%;
-  height: 76%;
+  width: 200px;
   border-radius: 25%;
   box-shadow: 8px 8px 10px var(--primary-500);
   animation: shootIn 1500ms ease-out;
@@ -25,6 +24,7 @@
 .experience-jobs {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .job-box {
