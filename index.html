@@ -72,23 +72,52 @@
 
       <section class="wrapper" id="contact">
         <h2 data-i18n-key="contact"></h2>
-        <div class="contacticons">
-          <a href="mailto:helenahcodes@gmail.com">
-            <img src="resources/img/fontawesome/svgs/envelope.svg" />
-            <span>helenahcodes@gmail.com</span>
-          </a>
-          <a href="https://github.com/heleah?tab=repositories" target="_blank">
-            <img src="resources/img/fontawesome/svgs/github-square.svg" />
-            <span> GitHub</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/helena-heil/?locale=de_DE"
-            target="_blank"
-          >
-            <img src="resources/img/fontawesome/svgs/linkedin.svg" />
-            <span>LinkedIn</span>
-          </a>
-        </div>
+        <article id="contact-wrapper">
+          <div class="contacticons">
+            <a href="mailto:helenahcodes@gmail.com">
+              <span>helenahcodes@gmail.com</span>
+              <img src="resources/img/fontawesome/svgs/envelope.svg" />
+            </a>
+            <a
+              href="https://github.com/heleah?tab=repositories"
+              target="_blank"
+            >
+              <span> GitHub</span>
+              <img src="resources/img/fontawesome/svgs/github-square.svg" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/helena-heil/?locale=de_DE"
+              target="_blank"
+            >
+              <span>LinkedIn</span>
+              <img src="resources/img/fontawesome/svgs/linkedin.svg" />
+            </a>
+          </div>
+          <div id="form">
+            <h4 data-i18n-key="send-msg"></h4>
+            <form action="return false">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter your name" />
+              <br />
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your email address"
+              />
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter your message here"
+                cols="40"
+                rows="10"
+              ></textarea>
+              <br />
+              <button data-i18n-key="send-button"></button>
+            </form>
+          </div>
+        </article>
       </section>
     </main>
 

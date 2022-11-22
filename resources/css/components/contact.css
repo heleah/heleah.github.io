@@ -12,7 +12,7 @@
   height: 2.5rem;
   position: relative;
   top: 0.4rem;
-  margin-right: 0.1rem;
+  margin-left: 0.3rem;
 }
 
 #contact img:hover,
@@ -20,16 +20,58 @@
   transform: scale(1.125);
 }
 
+#contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#contact-wrapper h4 {
+  margin-top: 0;
+}
+
+#contact-wrapper input {
+  margin: 0.6rem;
+  width: 40%;
+}
+
+#contact-wrapper textarea {
+  margin-top: 0.6rem;
+}
+
 .contacticons {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
-  width: 90%;
-  margin: auto;
+  margin: auto 5rem;
   font-size: 1.125rem;
 }
 
 .contacticons a:hover > * {
   color: var(--primary-500);
+}
+
+#form {
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #contact-wrapper input {
+    width: 55%;
+  }
+
+  #contact-wrapper textarea {
+    width: 80%;
+  }
+
+  .contacticons {
+    align-items: center;
+    margin: auto;
+  }
 }
