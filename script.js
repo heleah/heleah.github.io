@@ -134,6 +134,15 @@ const projects = [
     imgAlt: "Adventéire Preview",
   },
   {
+    id: "rock-paper-scissors",
+    name: "Rock Paper Scissors",
+    languages: "React, Styled Components",
+    pageUrl: "https://frontendmentor-rockpaperscissors-smoky.vercel.app/",
+    githubUrl: "https://github.com/heleah/frontendmentor-rockpaperscissors",
+    imgSrc: "resources/img/rps_mobile.png",
+    imgAlt: "Rock Paper Scissors Preview",
+  },
+  {
     id: "rest-countries",
     name: "REST Countries API",
     languages: "Next.js, React, Bootstrap, React Bootstrap, next-themes",
