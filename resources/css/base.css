@@ -20,6 +20,7 @@ body {
   line-height: 1.5;
   font-size: 1.25rem;
   font-family: "Lato", sans-serif;
+  overscroll-behavior: none;
 }
 
 header {
@@ -57,6 +58,27 @@ footer {
   position: relative;
   top: 6rem;
   padding: 1% 2%;
+}
+
+.slide-in ~ * {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.slide-in.active ~ * {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(80px);
+    transform: translateY(80px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 768px) {
