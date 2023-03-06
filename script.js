@@ -407,11 +407,10 @@ function debounce(func, wait = 20, immediate = true) {
 const slides = document.querySelectorAll(".slide-in");
 
 function checkSlide() {
-  slides.forEach((slide, i) => {
+  slides.forEach((slide) => {
     const slideTop = slide.getBoundingClientRect().top;
     const isInWindow =
-      slideTop <=
-      (window.innerHeight || document.documentElement.clientHeight) / 1.25;
+      slideTop <= (window.innerHeight || document.documentElement.clientHeight);
     isInWindow && slide.classList.add("active");
   });
 }
