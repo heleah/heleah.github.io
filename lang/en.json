@@ -12,6 +12,7 @@
   "data-validation": "Data validation",
   "description-adventeire": "Mobile-first capstone project for the web development bootcamp at neue fische. Users can browse through a list of sights in Ireland, add sights to favorites, view sight details, add sights to an itinerary, and view pins of all sights in the database on a Mapbox map. Deployed with Heroku.",
   "description-choredoor": "This game's aim is to open all the doors without encountering the ChoreBot (right), which will otherwise terminate the game immediately. Two counters show the current winning streak as well as the session's streak record. Deployed with GitHub Pages. (HTML and CSS mainly provided by Codecademy)",
+  "description-domindme": "Currently in development! To Do App with login and connection to a database. Check the README.md on GitHub for the current feature status.",
   "description-fadi": "Frontend development of online shops with React, Apollo GraphQL, Typescript, as well as server-side Node.js, HTML5, CSS3, Dust.js for mobile and desktop.",
   "description-mobilab": "Internal and external projects of web applications with React (Next.js), TypeScript, styled-components, REST APIs, Recoil, react-query based on Figma designs.",
   "description-neuefische": "Intensive 540-hour coding bootcamp developing an own app as a capstone project, mainly with React and styled-components.",

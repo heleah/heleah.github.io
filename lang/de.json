@@ -12,6 +12,7 @@
   "data-validation": "Datenvalidierung",
   "description-adventeire": "Mobile-first Abschlussarbeit für das neue fische Bootcamps. Nutzer können durch eine Liste von Sehenswürdigkeiten in Irland browsen, bestimmte Sehenswürdigkeiten als Favorit markieren, eine Detailansicht aufrufen, Sehenswürdigkeiten auf eine eigene Reisroute setzen, sowie Pins aller Sehenswürdigkeiten der Datenbank auf einer Karte von Mapbox einsehen. Deployed mit Heroku.",
   "description-choredoor": "Ziel dieses Spiels ist es alle Türen zu öffnen ohne dem ChoreBot(rechts) zu begegnen, der andernfalls die Spielrunde sofort beendet. Zwei Zähler zeigen die aktuelle Gewinnserie sowie den Serienrekord der Sitzung an. Deployed mit GitHub Pages. (HTML und CSS großteils von Codecademy bereitgestellt)",
+  "description-domindme": "Aktuell in Entwicklung! To Do App mit Login und Anbindung an eine Datenbank. Der aktuelle Feature-Stand kann in der README.md auf GitHub eingesehen werden.",
   "description-fadi": "Frontend-Entwicklung von Online-Shops mit React, Apollo GraphQL, TypeScript, serverseitiges Node.js, HTML5, CSS3, Dust.js für Mobile und Desktop.",
   "description-mobilab": "Interne und externe Projekte von Web-Plattformen mit React (Next.js), TypeScript, styled-components, REST APIs, Recoil, react-query anhand von Figma-Designs.",
   "description-neuefische": "Intensiv-Coding-Bootcamp in 540 Stunden Programmierpraxis mit Eigenentwicklung einer App als Abschlussarbeit hauptsächlich mit React und styled-components.",

@@ -134,6 +134,15 @@ const projects = [
     imgAlt: "Adventéire Preview",
   },
   {
+    id: "domindme",
+    name: "DoMindMe",
+    languages: "Next.js 13, Sass, Prisma, Supabase",
+    /* pageUrl: "", */
+    githubUrl: "https://github.com/heleah/domindme",
+    /* imgSrc: "",
+    imgAlt: "DoMindMe Preview", */
+  },
+  {
     id: "rock-paper-scissors",
     name: "Rock Paper Scissors",
     languages: "React, Styled Components",
@@ -220,15 +229,17 @@ function createProjects() {
     const ul = document.createElement("ul");
     buttonWrapper.appendChild(ul);
 
-    const pageButton = document.createElement("li");
-    pageButton.classList.add("button");
-    ul.appendChild(pageButton);
+    if (project.pageUrl) {
+      const pageButton = document.createElement("li");
+      pageButton.classList.add("button");
+      ul.appendChild(pageButton);
 
-    const pageA = document.createElement("a");
-    pageA.href = project.pageUrl;
-    pageA.target = "_blank";
-    pageA.innerText = "Demo";
-    pageButton.appendChild(pageA);
+      const pageA = document.createElement("a");
+      pageA.href = project.pageUrl;
+      pageA.target = "_blank";
+      pageA.innerText = "Demo";
+      pageButton.appendChild(pageA);
+    }
 
     const githubButton = document.createElement("li");
     githubButton.classList.add("button");
@@ -240,10 +251,12 @@ function createProjects() {
     githubA.innerText = "Repository";
     githubButton.appendChild(githubA);
 
-    const projectImg = document.createElement("img");
-    projectImg.src = project.imgSrc;
-    projectImg.alt = project.imgAlt;
-    newProject.appendChild(projectImg);
+    if (project.imgSrc) {
+      const projectImg = document.createElement("img");
+      projectImg.src = project.imgSrc;
+      projectImg.alt = project.imgAlt;
+      newProject.appendChild(projectImg);
+    }
   });
 }
 
