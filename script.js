@@ -133,15 +133,15 @@ const projects = [
     imgSrc: "resources/img/adventeire_preview.png",
     imgAlt: "Adventéire Preview",
   },
-  {
+  /*   {
     id: "domindme",
     name: "DoMindMe",
     languages: "Next.js 13, Sass, Prisma, Supabase",
-    /* pageUrl: "", */
+    //pageUrl: "",
     githubUrl: "https://github.com/heleah/domindme",
-    /* imgSrc: "",
-    imgAlt: "DoMindMe Preview", */
-  },
+    //imgSrc: "",
+    //imgAlt: "DoMindMe Preview",
+  }, */
   {
     id: "rock-paper-scissors",
     name: "Rock Paper Scissors",
