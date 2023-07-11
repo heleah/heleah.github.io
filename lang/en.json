@@ -1,6 +1,6 @@
 {
   "app-title": "Helena's Portfolio",
-  "about-me": "About me",
+  "about-me": "About Me",
   "and": "and",
   "backend-node": "Backend development with Node.js",
   "backend-node-exp-mong": "Backend development with Node.js, Express and MongoDB",
@@ -16,6 +16,7 @@
   "description-fadi": "Frontend development of online shops with React, Apollo GraphQL, Typescript, as well as server-side Node.js, HTML5, CSS3, Dust.js for mobile and desktop.",
   "description-mobilab": "Internal and external projects of web applications with React (Next.js), TypeScript, styled-components, REST APIs, Recoil, react-query based on Figma designs.",
   "description-neuefische": "Intensive 540-hour coding bootcamp developing an own app as a capstone project, mainly with React and styled-components.",
+  "description-neuefische_2": "Intensive 540-hour coding bootcamp with team-based development of a four-week-project mainly with Python, SQL and Tableau.",
   "description-pokemon": "Mobile-first Pokemon app created during the neue fische bootcamp with a public API. The user can use the search bar to find a specific Pokémon and add it to theit favorites by clicking a button. By clicking the info button, more details about the Pokémon will be displayed. Group project together with Bejan Afshar, Lukas Kurpiela and Sharine Ankenbrand, deployed with Vercel.",
   "description-quizney": "Mobile-first quiz app with questions about Disney created during the neue fische bootcamp. The Home page contains questions with four possible answers. By clicking an option, the user will see if it is right or wrong. The other pages are bookmarks (not yet functional), submitting new questions (not functional), as well as a profile page (static). Deployed with Vercel.",
   "description-quizney-react": "Mobile-first quiz app with questions about Disney created during the neue fische bootcamp. The Home page contains questions with four possible answers. By clicking an option, the user will see if it is right or wrong. One of the other pages is Bookmarks, which are added or removed by clicking the crown icon. The form for new questions is not yet functional, as well as the profile page (static). Deployed with Vercel.",
@@ -26,7 +27,7 @@
   "full-view": "Full view",
   "functions": "Functions",
   "functions-incl": "Functions (incl. built-in)",
-  "intro": "I am Helena, Junior Frontend Developer with the motivation to keep developing both myself and new projects in many ways. <br /> During the last year on the job, I have gathered experience with mainly React and Next.js with TypeScript, styled-components and Tailwind in international, cross-funcional teams.<br>I have started a Data Analytics course in May 2023.",
+  "intro": "I am Helena, Junior Frontend Developer with the motivation to keep developing both myself and new projects in many ways. <br /> During the last year on the job, I have gathered experience with mainly React and Next.js with TypeScript and styled-components in international, cross-funcional teams.<br>As I am interested in discovering the ever-growing world of data from a different point of view, I have started a Data Analytics course in May 2023.",
   "loops": "Loops",
   "projects": "Projects",
   "remote": "Remote",
@@ -35,5 +36,5 @@
   "sql-dbs": "SQL & Data bases",
   "tdd": "Test Driven Development with Mocha & Node.js",
   "welcome": "Hello and welcome to my portfolio!",
-  "work-experience": "Work experience"
+  "work-experience": "Work Experience"
 }

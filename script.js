@@ -55,6 +55,15 @@ const experienceContainer = document.querySelector(".experience-jobs");
 
 const experience = [
   {
+    id: "neuefische_2",
+    position: "Trainee Data Analytics",
+    company: "neuefische",
+    time: "05/2023 - 08/2023",
+    location: "remote",
+    description:
+      "Intensiv-Coding-Bootcamp in 540 Stunden Programmierpraxis mit Entwicklung eines vierwöchigen Abschlussprojekts in Teamarbeit hauptsächlich mit Python, SQL und Tableau.",
+  },
+  {
     id: "mobilab",
     position: "Full Stack Engineer",
     company: "MobiLab Solutions",
@@ -187,7 +196,7 @@ const projects = [
     imgSrc: "resources/img/quizney.png",
     imgAlt: "Quizney Preview",
   },
-  {
+  /*   {
     id: "choredoor",
     name: "Chore Door",
     languages: "JavaScript, HTML, CSS",
@@ -195,7 +204,7 @@ const projects = [
     githubUrl: "https://github.com/heleah/choredoor",
     imgSrc: "resources/img/choredoor.jpg",
     imgAlt: "Chore Door Preview",
-  },
+  }, */
 ];
 
 function createProjects() {
