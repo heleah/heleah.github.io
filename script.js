@@ -55,7 +55,7 @@ const experienceContainer = document.querySelector(".experience-jobs");
 
 const experience = [
   {
-    id: "neuefische_2",
+    id: "neuefische-data",
     position: "Trainee Data Analytics",
     company: "neuefische",
     time: "05/2023 - 08/2023",
@@ -83,7 +83,7 @@ const experience = [
       "Frontend-Entwicklung von Online-Shops mit React, Apollo GraphQL, TypeScript, serverseitiges Node.js, HTML5, CSS3, Dust.js für Mobile und Desktop.",
   },
   {
-    id: "neuefische",
+    id: "neuefische-web",
     position: "Trainee Web Development",
     company: "neuefische",
     time: "04/2021 - 07/2021",
@@ -141,6 +141,15 @@ const projects = [
     githubUrl: "https://github.com/heleah/adventeire",
     imgSrc: "resources/img/adventeire_preview.png",
     imgAlt: "Adventéire Preview",
+  },
+  {
+    id: "statistikkurs-de",
+    name: "Statistik-kurs.de (Data Analytics)",
+    languages: "Python, SQL, Tableau",
+    //pageUrl: "https://adventeire.herokuapp.com/",
+    //githubUrl: "https://github.com/heleah/adventeire",
+    imgSrc: "resources/img/statistikkursde.png",
+    imgAlt: "Statistik-kurs.de Analytics",
   },
   /*   {
     id: "domindme",
@@ -250,15 +259,17 @@ function createProjects() {
       pageButton.appendChild(pageA);
     }
 
-    const githubButton = document.createElement("li");
-    githubButton.classList.add("button");
-    ul.appendChild(githubButton);
+    if (project.githubUrl) {
+      const githubButton = document.createElement("li");
+      githubButton.classList.add("button");
+      ul.appendChild(githubButton);
 
-    const githubA = document.createElement("a");
-    githubA.href = project.githubUrl;
-    githubA.target = "_blank";
-    githubA.innerText = "Repository";
-    githubButton.appendChild(githubA);
+      const githubA = document.createElement("a");
+      githubA.href = project.githubUrl;
+      githubA.target = "_blank";
+      githubA.innerText = "Repository";
+      githubButton.appendChild(githubA);
+    }
 
     if (project.imgSrc) {
       const projectImg = document.createElement("img");
@@ -277,8 +288,24 @@ const certificateContainer = document.getElementById("certificate-container");
 
 const certificates = [
   {
+    name: "Data Analytics Bootcamp at neuefische GmbH",
+    id: "neuefische-data",
+    contents: [
+      "Python",
+      "Numpy, pandas",
+      "SQL",
+      "Tableau",
+      "EDA",
+      "Data Visualization",
+      "Stakeholder Management",
+    ],
+    certSrc: "./resources/certificate-Data_Analytics-Helena_Heil.pdf#toolbar=0",
+    certImgSrc: "./resources/img/neuefischeData.png",
+    certAlt: "Data Analytics Certificate neuefische",
+  },
+  {
     name: "Web Development Bootcamp at neuefische GmbH",
-    id: "neuefische",
+    id: "neuefische-web",
     contents: [
       "HTML5",
       "CSS3",
