@@ -147,7 +147,7 @@ const projects = [
     name: "Statistik-kurs.de (Data Analytics)",
     languages: "Python, SQL, Tableau",
     pageUrl: "./resources/Statistik-kurs-de_pres.pdf#toolbar=0",
-    //githubUrl: "https://github.com/heleah/adventeire",
+    githubUrl: "https://github.com/heleah/statistikkurs-de",
     imgSrc: "resources/img/statistikkursde.png",
     imgAlt: "Statistik-kurs.de Analytics",
   },
